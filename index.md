@@ -8,11 +8,11 @@ maintainers:
 
 **Lesson Maintainers:** {{ page.maintainers | join: ', ' }}
 
-[Google Earth Engine (GEE)](https://www.google.com/intl/es_in/earth/education/tools/google-earth-engine/#!/) es una plataforma de geomática basada en la nube que permite a los usuarios visualizar y analizar imágenes de satélite de nuestro planeta. Los científicos y las organizaciones sin ánimo de lucro utilizan GEE para llevar a cabo estudios de sensoramiento remoto, tales como: predecir brotes de enfermedades, gestionar recursos naturales, monitorear desastres naturales, etc.
+[Google Earth Engine (GEE)](https://www.google.com/intl/es_in/earth/education/tools/google-earth-engine/#!/) es una plataforma de geomática basada en la nube que permite a los usuarios visualizar y analizar imágenes de satélite de nuestro planeta. Los científicos y las organizaciones sin ánimo de lucro utilizan GEE para llevar a cabo estudios de percepción remota, tales como: anticipar epidemias, gestionar recursos naturales, monitorear desastres naturales, etc.
 
 Este es un curso básico de GEE diseñado para complementar los fundamentos conceptuales y teóricos de la percepción remota. 
 
-Se comienza con una descripción general GEE (Componentes de GEE, Code Editor, Explorer y Clientes API). Luego se muestran diversos productos generados con la base de datos disponibles y los algorítmos de GEE. Se presentan las nociones básicas de Code Editor. Una introducción al lenguaje Javascript. Descripción General del Code Editor. API Javascript de GEE. Convenciones: Guía de Estilo. Acceso a las funcionalidades de la API. Consulta de la documentación de las funciones. Tipo de datos (Listas, Diccionarios, etc.). Funciones definidas por el usuario. En la última sesión se mostrará como utilizar la API GEE en un entorno Python.
+Se comienza con una descripción general de la plataforma GEE. Luego se muestran diversos productos generados con la base de datos disponibles y los algorítmos de GEE. Se presentan las nociones básicas de Code Editor. Una introducción al lenguaje Javascript. Descripción General del Code Editor. API Javascript de GEE. Convenciones: Guía de Estilo. Acceso a las funcionalidades de la API. Consulta de la documentación de las funciones. Tipo de datos (Listas, Diccionarios, etc.). Funciones definidas por el usuario. En la última sesión se mostrará como utilizar la API GEE en un entorno Python.
 
 > ## Antes de empezar
 >

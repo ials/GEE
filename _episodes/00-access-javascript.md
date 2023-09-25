@@ -1,48 +1,46 @@
 ---
-title: "Acceso a GEE y tips JavaScript"
+title: "Acceso a GEE e introducción a JavaScript"
 teaching: 30
 exercises: 30
 questions:
-- ¿Cómo obtener una cuenta?
+- ¿Cómo obtener una cuenta en GEE?
 - ¿Qué es lo básico que se debe de saber acerca de JavaScript?
 objectives:
 - Acceder a Google Earth Engine
 - Generar líneas de código JavaScript
 keypoints:
-- "Cualquiera puede registrarse para usar Google Earth Engine."
-- "El Code Editor es un punto de acceso fácil de GEE que utiliza el IDE de JavaScript."
-- "JavaScript es un lenguaje de programación que también se utiliza en desarrollo web."
+- Cualquiera puede registrarse para usar Google Earth Engine.
+- El Code Editor es un punto de acceso fácil de GEE que utiliza el IDE de JavaScript.
+- JavaScript es un lenguaje de programación que también se utiliza en desarrollo web.
 ---
 # Pre-requisitos
 
-Por favor, complete este el procedimiento antes de tomar las lecciones. Siga los pasos que se indican a continuación para registrarse en una cuenta de Google Earth Engine y únase a nuestro repositorio compartido.
+Por favor, complete este procedimiento antes de realizar los ejercicios prácticos. Siga los pasos que se indican a continuación para registrarse en  Google Earth Engine y únase a nuestro repositorio compartido.
 
 ### 1. Registrarse para obtener una cuenta en Google Earth Engine
 
-  - Ir a la [página web de GEE sign up](https://signup.earthengine.google.com/#!/) e ingresar > el correo electrónico que deseas usar para tu cuenta GEE. Una cuenta gmail es mejor la mejor opción.
-  - Introduzca su correo electrónico, su afiliación y su región/país. Cuando le pregunte qué desea lograr, mencione que labora en una institución del estado peruano (SENAMHI).
+  - Ir a la [página web de GEE sign up](https://signup.earthengine.google.com/#!/) e ingresar > el correo electrónico que deseas usar para tu cuenta GEE. Una cuenta gmail es la mejor opción.
+  - Introduzca su correo electrónico, su afiliación y su región/país. Cuando le pregunte qué desea lograr, mencione que trabaja en una institución dedicada a la investigación.
   - Revise los términos, verifique su identificación de no-robot y haga clic en 'Submit'.
   - Revise su correo electrónico, incluida la carpeta de spam, para ver si hay un enlace del equipo de desarrolladores de Google. El correo electrónico de confirmación tendrá instrucciones sobre cómo acceder al Code Editor.
 
-¿No estás seguro de tener acceso? Utilice [este link](https://code.earthengine.google.com/) para verificar. Si no ha conseguido acceso, recibirá mensale indicándole error de autorización, que significa que su cuenta no está registrada. Si tiene acceso, el enlace abrirá el IDE de Javascript. Este enlace constituye su portal permanente de acceso a GEE.
+¿No estás seguro de tener acceso? Utilice [este link](https://code.earthengine.google.com/) para verificar. Si no ha conseguido acceso, recibirá un mensaje indicando un error de autorización, lo cual significa que su cuenta no está registrada. Si tiene acceso, el enlace abrirá el IDE de Javascript. Este enlace constituye su puerta de acceso a GEE.
 
 ### 2. Unirse a nuestro repositorio compartido de GEE
 
-GEE nos permite tener carpetas de grupo compartidas/repositorios para los scripts que vayamos desarrollando. Se ha organizado el código presentado en estas lecciones de la siguiente manera. En lugar de añadir cada uno de vuestros correos electrónicos uno a uno (¡lo cual es muy tedioso!), se unirá a un grupo de Google que nos permitirá acceder al repositorio de código compartido. Por favor, sigua estos pasos:
+GEE permite tener carpetas de grupo compartidas/repositorios para los scripts que vayamos desarrollando. Se ha organizado el código presentado en estas lecciones de la siguiente manera. En lugar de añadir uno a uno los correos electrónicos de los asistentes (¡lo cual es muy tedioso!), se unirá a un grupo de Google que nos permitirá acceder al repositorio de código compartido. Por favor, siga estos pasos:
 
 <!-- 
   - Únase al grupo de Google Earth Engine SENAMHI haciendo clic en este enlace. <a href="https://goo.gl/JsnWZH" target="_blank">https://goo.gl/JsnWZH</a> . No se preocupe por los permisos de publicación.
  -->
   - Aceptar el repositorio compartido haciendo clic en este enlace:
-  <a href="https://code.earthengine.google.com/?accept_repo=users/hasencios/GEE_BASICO_SENAMHI
-" target="_blank">https://code.earthengine.google.com/?accept_repo=users/hasencios/GEE_BASICO_SENAMHI</a>
-  - En el Code Editor, vaya al **Scripts tab** en el panel superior izquierdo, desplácese hacia abajo y amplíe la sección "Reader". Un directorio llamado *users/hasencios/GEE_BASICO_SENAMHI* debe aparecer con versiones de sólo lectura de los scripts completos de cada lección.
+  <a href="https://code.earthengine.google.com/?accept_repo=users/ials/GEE_BASICO
+" target="_blank">https://code.earthengine.google.com/?accept_repo=users/ials/GEE_BASICO</a>
+  - En el Code Editor, vaya al **Scripts tab** en el panel superior izquierdo, desplácese hacia abajo y amplíe la sección "Reader". Un directorio llamado *users/ials/GEE_BASICO* debe aparecer con versiones de sólo lectura de los scripts completos de cada sesión.
 
+### 3. Nociones de Javascript 
 
-### 3. Tips de Javascript 
-
-JavaScript, que no debe confundirse con Java, es un lenguaje de programación ampliamente utilizado en el desarrollo web junto con HTML y CSS. Puede aprender JavaScript usando cualquier tutoriales en línea, como los que ofrece <a href="https://www.w3schools.com/js/" target="_blank">w3schools</a> .
-
+JavaScript, que no debe confundirse con Java, es un lenguaje de programación ampliamente utilizado en el desarrollo web junto con HTML y CSS. Puede aprender JavaScript usando cualquier tutorial en línea, como los que ofrece <a href="https://www.w3schools.com/js/" target="_blank">w3schools</a> .
 
 Accederemos al motor de Google Earth introduciendo comandos de JavaScript en un entorno de desarrollo integrado (IDE) en línea llamado Code Editor. No es necesario aprender formalmente el JavaScript para trabajar con GEE. A continuación proporcionamos ejemplos y recursos para empezar.
 
@@ -50,7 +48,6 @@ A lo largo de las lecciones, accederemos a Google Earth Engine introduciendo com
 
 #### JavaScript básico para GEE
  Aquí hay algunas herramientas útiles para GEE, reproducidos de la. <a href="https://docs.google.com/document/d/1ZxRKMie8dfTvBmUNOO0TFMkd7ELGWf3WjX0JvESZdOE/edit" target="_blank">Earth Engine 101 Beginner's Curriculum</a>.
-
 
 
 {% highlight javascript %}
@@ -65,33 +62,33 @@ Las variables se usan para almacenar objetos y se definen usando la palabra clav
 var theAnswer = 42;
 
 // los objetos string empiezan y terminan con una sola cita
-var myVariable = 'I am a string';
+var myVariable = 'Yo soy una cadena de texto';
 
 // los objetos string también pueden usar comillas dobles, pero no mezclan y combinan
-var myOtherVariable = "I am also a string";
+var myOtherVariable = "Yo tambien soy una cadena";
 {% endhighlight %}
 
 Las declaraciones deben terminar en punto y coma, o de lo contrario le aparecerá un aviso.
 {% highlight javascript %}
-var test = 'I feel incomplete...'
-var test2 = 'I feel complete!';
+var test = 'Me siento incompleto...'
+var test2 = 'Me siento completo!';
 {% endhighlight %}
 
 Aplicar los parámetros de la función y utilizar las listas.
 {% highlight javascript %}
 // Los paréntesis se utilizan para pasar parámetros a las funciones
-print('This string will print in the Console tab.');
+print('Esta cadena de texto se imprimirá en la pestaña Console.');
 
-/* SLos corchetes se utilizan para los elementos de una lista.
+/* Los corchetes se utilizan para los elementos de una lista.
 El índice cero se refiere al primer elemento de una lista*/
-var myList = ['eggplant','apple','wheat'];
-print(myList[0]); // would print 'eggplant'
+var myList = ['café','azúcar','panela'];
+print(myList[0]); // would print 'café'
 {% endhighlight %}
 
 Usando diccionarios.
 {% highlight javascript %}
 // Los corchetes (o llaves) pueden ser usados para definir diccionarios (key:value pairs).
-var myDict = {'food':'bread', 'color':'red', 'number':42};
+var myDict = {'alimento':'pan', 'color':'beige', 'número':42};
 
 // Los corchetes se pueden utilizar para acceder a los elementos del diccionario mediante una tecla.
 print(myDict['color']);
@@ -103,9 +100,9 @@ print(myDict.color);
 Las funciones pueden definirse como una forma de reutilizar el código y facilitar su lectura.
 {% highlight javascript %}
 var myHelloFunction = function(string) {
-  return 'Hello ' + string + '!';
+  return 'Hola ' + string + '!';
 };
-print(myHelloFunction('world'));
+print(myHelloFunction('amigos'));
 {% endhighlight %}
 
 
