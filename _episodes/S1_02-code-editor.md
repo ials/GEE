@@ -283,7 +283,7 @@ Para instrucciones detalladas sobre Export, véase la <a href="https://developer
 <br>
 <br>
 
-Enlace del código completo que usamos en esta lección:
-<a href="https://code.earthengine.google.com/eb5312c0ed3c57685c041763d23fd225" target="_blank">https://code.earthengine.google.com/eb5312c0ed3c57685c041763d23fd225</a>
+Enlace del código completo usado en esta lección:
+<a href="https://code.earthengine.google.com/785e05ebeb16b45744b860935a98ffab" target="_blank">https://code.earthengine.google.com/785e05ebeb16b45744b860935a98ffab</a>
 
 ### Practique con el Code Editor!!!
