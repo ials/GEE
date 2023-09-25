@@ -1,9 +1,7 @@
 ---
 layout: lesson
-root: .
-
-maintainers:
-  - IALS
+root: null
+maintainers: IALS
 ---
 
 **Lesson Maintainers:** {{ page.maintainers | join: ', ' }}
