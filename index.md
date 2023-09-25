@@ -25,7 +25,7 @@ Se comienza con una descripción general GEE (Componentes de GEE, Code Editor, E
 >
 > #### Prerequisitos
 >
-> Las lecciones requieren de conocimientos previos de algún lenguaje de programación tales como: **Python**, **R**, **Matlab**, **Fortran**, **C++**, **C**, **JavaScript**, etc. Asimismo, conocimientos de **Sensoramiento Remoto** y **Sistemas de Información Geográfica**.
+> Las lecciones no requieren de conocimientos previos de algún lenguaje de programación. Sin embargo, se requiere comprender los fundamentos básicos de **Percepción Remota** y **Sistemas de Información Geográfica**.
 {: .prereq}
 
 <!--  
