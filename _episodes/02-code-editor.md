@@ -88,7 +88,7 @@ Puedes compartir una versión estática de los scripts haciendo clic en **Get Li
     **Consejo importante: Cuando se publique en el foro de ayuda, incluye SIEMPRE el enlace de tu script para que la gente pueda ayudarte a solucionar el
 	problema. Asegúrate de que todos los assets personales que utilices sean compartidos públicamente para que el script se ejecute para otros.**
 
-#### Únete al repositorio compartido
+#### Únase al repositorio compartido
 
 Para colaborar de forma interactiva en el desarrollo de los scripts con otros usuarios, puede crear una carpeta compartida, invitar a sus colaboradores y colocar los scripts en esa carpeta. Hemos creado una carpeta compartida para el desarrollo de este curso.
 
@@ -96,7 +96,7 @@ Usted debería de haber accedido al repositorio de scripts compartidos en el Cod
 
 <!-- 
   - Únase al grupo de Google Earth Engine SENAMHI haciendo clic en este enlace. <a href="https://goo.gl/JsnWZH" target="_blank">https://goo.gl/JsnWZH</a> . No se preocupe por los permisos de publicación. -->
-- Acceder al repositorio compartido haciendo clic en este enlace: <a href="https://code.earthengine.google.com/?accept_repo=users/ials/GEE_BASICO" target="_blank">https://code.earthengine.google.com/?accept_repo=users/ials/GEE_BASICO</a>
+- Acceder al repositorio compartido haciendo clic en este enlace: <a href="https://code.earthengine.google.com/?accept_repo=users/ivanlizarazo/GEE_BASICO" target="_blank">https://code.earthengine.google.com/?accept_repo=users/ials/GEE_BASICO</a>
 - En el Code Editor, vaya a la pestaña **Scripts** en el panel superior izquierdo, desplázate hacia abajo y expande la sección "Shared". Un directorio llamado *GEE_BASIC0* debería aparecer con versiones de sólo lectura de los scripts completos de cada episodio.
 
 Cualquier actualización se reflejará en estas versiones del script. Como todos los scripts GEE, estas son versiones controladas. Los permisos de lectura o escritura para individuos o grupos se pueden establecer en el Code Editor usando el pequeño icono gris de compartir que aparece a la derecha si pasas el ratón por encima del nombre del directorio en la pestaña *Scripts*. Deberías tener acceso de sólo lectura a este repositorio.
