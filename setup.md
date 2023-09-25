@@ -4,7 +4,7 @@ title: Setup
 ---
 
 > ## Datos
-> Los datos usados en el desarrollo de las lecciones serán proporcinados a medida que avancemos en el tutorial a través de un archivo compartido en GEE o Google Drive.
+> Los datos usados en el desarrollo de las lecciones serán proporcionados a medida que avancemos en el curso a través de un archivo compartido en GEE o Google Drive.
 {: .prereq}
 
 <!--
