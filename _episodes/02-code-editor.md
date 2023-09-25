@@ -56,7 +56,7 @@ print("Hola Mundo!");
 
 #### Sugerencia automática
 
-El editor marcará las declaraciones como incompletas **`i`** si escribes sin un punto y coma al final. Puedes controlar estas sugerencias yendo a la pequeña rueda gris en la parte superior derecha de la página y activándola o desactivándola.
+El editor marcará las declaraciones como incompletas **`i`** si escribe sin un punto y coma al final. Puede controlar estas sugerencias yendo a la pequeña rueda gris en la parte superior derecha de la página y activándola o desactivándola.
 
 {% highlight javascript %}
 print("Hola Mundo!");
@@ -75,7 +75,7 @@ Guarde los scripts haciendo clic en el botón **Save**. Para incluir un mensaje 
 <img src="../fig/02_getlinkN.png" border = "10" width="100%" height="100%" >
 <br><br>
 
-*Note: Si no hiciste ningún cambio en el script, el botón* **Save** *se oscurecerá.*
+*Note: Si no realizó ningún cambio en el script, el botón* **Save** *se oscurecerá.*
 
 Si se observa en el panel superior izquierdo, se podrá ver que el script está ahora guardado en tu gestor de **Scripts**. Tienes tres categorías de scripts: privado, compartido y ejemplos. Cada script está respaldado en Git. Si pasas el ratón por encima del nombre del script, aparecerán tres iconos que te permitirán volver a versiones anteriores, renombrar o eliminar el script. También puedes crear carpetas y hacer clic y arrastrar los scripts a esos directorios.
 
