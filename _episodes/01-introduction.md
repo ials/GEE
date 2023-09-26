@@ -130,7 +130,7 @@ Si todavía no está seguro de para qué sirve GEE, puede revisar la siguiente p
 
 Usando el *Code Editor*, se escriben comandos que son enviados como un objeto a Google para ser procesados en paralelo en la nube (server-side). Los usuarios pueden visualizar los resultados de Google en su navegador (client-side), incluyendo objetos como mapas, gráficos o resultados estadísticos.
 
-Utilizando una de las API, los usuarios pueden filtrar enormes colecciones de imágenes a las fechas y áreas de su interés, asignar algoritmos sobre colecciones de imágenes, aplicar algoritmos a imágenes individuales o colecciones de imágenes y estimar estadísticos a través del tiempo y el espacio sin tener que descargar una sola imágen a su computadora.
+Utilizando su API los usuarios pueden filtrar enormes colecciones de imágenes a las fechas y áreas de su interés, asignar algoritmos sobre colecciones de imágenes, aplicar algoritmos a imágenes individuales o colecciones de imágenes y estimar estadísticos a través del tiempo y el espacio sin tener que descargar una sola imágen a su computadora.
 
 <br>
 <img src="../fig/01_What is Google Earth Engine_.png" border = "10">
@@ -141,7 +141,7 @@ Utilizando una de las API, los usuarios pueden filtrar enormes colecciones de im
 Existen dos lados de programación en GEE: el lado del servidor y el lado del cliente. Un objeto puede ser convertido entre los dos tipos (p.ej. una cadena de texto). Igualmente, algunas operaciones se pueden realizar usando objetos de los dos lados, siempre y cuando se use la sintaxis apropiada. 
 
 <br>
-<img src="../fig/01_client_server.png" border = "10">
+<img src="../fig/01_server_client.png" border = "10">
 <br><br>
 
 Hay que tener en cuenta que la mayoría de las veces hay que usar la programación del lado del servidor ya que es allí donde se realiza la mayoría de los procesos.
