@@ -205,10 +205,10 @@ print(squares2);
 {% endhighlight %}
 
 <br>
-<img src="../fig/01_more_js.png" border = "10">
+<img src="../fig/01_more_js.png" width="50%" height="50%" border = "10">
 <br><br>
 
-##### Quizz práctico
+#### Quizz práctico
 
 Escriba una función que permita realizar la multiplicación de cada  elemento de una lista por cualquier número.  Pruebe la función con varias multiplicaciones.
 
