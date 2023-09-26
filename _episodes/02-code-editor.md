@@ -83,10 +83,11 @@ Si se observa en el panel superior izquierdo, se podrá ver que el script está 
 *Nota/advertencia: Si cambias el nombre de un script, su historial de revisiones desaparece.*
 
 #### Compartiendo Scripts
-Puedes compartir una versión estática de los scripts haciendo clic en **Get Link**. Aparecerá una url en el campo de dirección de tu navegador. Comparte este enlace para dar a otras personas acceso a tu script como *it is*. Si continúas haciendo ediciones en este script, no se actualizarán en la versión enlazada. Esta opción es útil para compartir ejemplos e instantáneas de scripts con otras personas.
 
-    **Consejo importante: Cuando se publique en el foro de ayuda, incluye SIEMPRE el enlace de tu script para que la gente pueda ayudarte a solucionar el
-	problema. Asegúrate de que todos los assets personales que utilices sean compartidos públicamente para que el script se ejecute para otros.**
+Se puede compartir una versión estática de los scripts haciendo clic en **Get Link**. Aparecerá una url en el campo de dirección de tu navegador. Comparte este enlace para dar a otras personas acceso a tu script como *it is*. Si continúas haciendo ediciones en este script, no se actualizarán en la versión enlazada. Esta opción es útil para compartir ejemplos e instantáneas de scripts con otras personas.
+
+    **Consejo importante: Cuando se publique en el foro de ayuda, incluya SIEMPRE el enlace de su script para que la gente pueda ayudarte a solucionar el
+	problema. Asegúrese de que todos los assets personales que utilice sean compartidos para que el script se ejecute para otros.**
 
 #### Únase al repositorio compartido
 
