@@ -1,7 +1,7 @@
 ---
-title: "Code Editor"
-teaching: 60
-exercises: 60
+title: "Editor de código"
+teaching: 45
+exercises: 45
 questions:
 - "¿Cuáles son las principales características del Code Editor?"
 - "¿En dónde podemos encontrar ayuda cuando estamos aprendiendo GEE?"
@@ -19,17 +19,17 @@ keypoints:
 
 ---
 
-# Vista general del Code Editor
+### IALS - 06.10.23
 
-GEE tiene un entorno de desarrollo integrado (IDE) llamado Editor de código. El Editor de código tiene varias características para ayudar a hacer más fácil la programación en este entorno que exploraremos en este tutorial. Para una descripción exhaustiva, véase el <a href="https://developers.google.com/earth-engine/playground#api-reference-docs-tab" target="_blank">Earth Engine Code Editor help page</a> en las guías de usuario de GEE. 
+# Vista general del Editor de Código
 
+GEE tiene un entorno de desarrollo integrado (IDE) llamado Editor de código (*Code Editor*). El Editor de código tiene varias características para ayudar a hacer más fácil la programación en este entorno que exploraremos en este tutorial. Para una descripción exhaustiva, véase el <a href="https://developers.google.com/earth-engine/playground#api-reference-docs-tab" target="_blank">Earth Engine Code Editor help page</a> en las guías de usuario de GEE. 
 
-
-# Ejercicios: Explorando el Code Editor
+# Ejercicios: Exploración del Code Editor
 
 ## 1. Para empezar
 
-**Para acceder al Code Editor, escribe la siguiente url en tu navegador: <a href="https://code.earthengine.google.com" target="_blank">https://code.earthengine.google.com</a>**. Debería aparecer una interfaz de programación web como la siguiente. El siguiente diagrama tiene anotaciones que apuntan a muchas de las funcionalidades que cubriremos hoy.
+**Para acceder al Code Editor, escriba la siguiente url en su navegador: <a href="https://code.earthengine.google.com" target="_blank">https://code.earthengine.google.com</a>**. Debería aparecer una interfaz de programación web como la siguiente. El siguiente diagrama tiene anotaciones que apuntan a muchas de las funcionalidades que cubriremos hoy.
 
 <br>
 <img src="../fig/02_codeeditor.png" border = "10">
@@ -39,7 +39,7 @@ GEE tiene un entorno de desarrollo integrado (IDE) llamado Editor de código. El
 
 El código Javascript está escrito en esta ventana. El editor también tiene algunas funciones de ayuda, incluyendo autocompletar para las funciones GEE, autocompletar para los paréntesis, etc. y algunas sugerencias básicas de subrayado y sintaxis.
 
-Por ejemplo, puedes escribir comentarios usando una doble barra. Escriba lo siguiente en su editor y haga clic en el botón "Run".
+Por ejemplo, se pueden escribir comentarios usando una doble barra. Escriba lo siguiente en su editor y haga clic en el botón "Run".
 
 {% highlight javascript %}
 // Esto es sólo un comentario.
@@ -56,10 +56,10 @@ print("Hola Mundo!");
 
 #### Sugerencia automática
 
-El editor marcará las declaraciones como incompletas **`i`** si escribe sin un punto y coma al final. Puede controlar estas sugerencias yendo a la pequeña rueda gris en la parte superior derecha de la página y activándola o desactivándola.
+El editor marcará las declaraciones incompletas con una **`i`**, es decir si olvida escribir el punto y coma al final de cada línea. 
 
 {% highlight javascript %}
-print("Hola Mundo!");
+print("Hola Mundo!")
 {% endhighlight %}
 
 <br>
@@ -96,30 +96,30 @@ Usted debería de haber accedido al repositorio de scripts compartidos en el Cod
 
 <!-- 
   - Únase al grupo de Google Earth Engine SENAMHI haciendo clic en este enlace. <a href="https://goo.gl/JsnWZH" target="_blank">https://goo.gl/JsnWZH</a> . No se preocupe por los permisos de publicación. -->
-- Acceder al repositorio compartido haciendo clic en este enlace: <a href="https://code.earthengine.google.com/?accept_repo=users/ivanlizarazo/GEE_BASICO" target="_blank">https://code.earthengine.google.com/?accept_repo=users/ials/GEE_BASICO</a>
+- Acceder al repositorio compartido haciendo clic en este enlace: <a href="https://code.earthengine.google.com/?accept_repo=users/ivanlizarazo/GEE_BASICO" target="_blank">https://code.earthengine.google.com/?accept_repo=users/ivanlizarazo/GEE_BASICO</a>
 - En el Code Editor, vaya a la pestaña **Scripts** en el panel superior izquierdo, desplázate hacia abajo y expande la sección "Shared". Un directorio llamado *GEE_BASIC0* debería aparecer con versiones de sólo lectura de los scripts completos de cada episodio.
 
 Cualquier actualización se reflejará en estas versiones del script. Como todos los scripts GEE, estas son versiones controladas. Los permisos de lectura o escritura para individuos o grupos se pueden establecer en el Code Editor usando el pequeño icono gris de compartir que aparece a la derecha si pasas el ratón por encima del nombre del directorio en la pestaña *Scripts*. Deberías tener acceso de sólo lectura a este repositorio.
 
 <br>
 
-## 3. Accediendo a la base de datos de la nube de Google
+## 3. Acceso a los datos de la nube de Google
 
-#### Barra de herramientas de búsqueda: Encontrar una base de datos y cargarla como `ImageCollections`
+#### Barra de herramientas de búsqueda: Encontrar un conjunto de datos raster y cargarlo como `ImageCollections`
 
-Para consultar el <a href="https://code.earthengine.google.com/datasets/" target="_blank">GEE data catalog</a>, puedes introducir palabras clave en la barra de búsqueda en la parte superior del Code Editor.
+Para consultar el <a href="https://code.earthengine.google.com/datasets/" target="_blank">catálogo de datos GEE</a>, se pueden introducir palabras clave en la barra de búsqueda en la parte superior del Code Editor.
 
 Para practicar, carguemos algunas imágenes en el Code Editor. Vamos a buscar e importar el producto **Landsat 8**.
   - Para hacer esto, ve a la barra de herramientas *Search* y escribe **Landsat 8 Level 2**.
   - Seleccione la base de datos - USGS Landsat 8 Level 2 Collection 2 Tier 1- haciendo clic en el nombre. Esto cargará los metadatos para esta colección de datos. Puedes confirmar que tienes el correcto porque el "ImageCollection ID" debe decir **LANDSAT/LC08/C02/T1_L2**
   - Ahora, haz clic en **Import** en la ventana emergente. Una nueva variable (`ImageCollection`) se cargará en el panel "Imports" en la parte superior del Code Editor.
-  - Renombre este objeto como "L8_SR". Este objeto es una `ImageCollection`, lo que significa que es una pila de imágenes. Fíjese que tenemos que declarar este objeto usando *var*. Si haces clic en el pequeño icono cuadrado azul encima de la colección, aparecerá un ventana emergente mostrando el código que acabas de crear.
+  - Renombre este objeto como "L8_SR". Este objeto es una `ImageCollection` de imágenes en el nivel de procesamiento 2, lo que significa que es una *pila* de imágenes. Fíjese que tenemos que declarar este objeto usando *var*. Si haces clic en el pequeño icono cuadrado azul encima de la colección, aparecerá un ventana emergente mostrando el código que se acaba de crear.
 
 {% highlight javascript %}
 var L8_SR = ee.ImageCollection("LANDSAT/LC08/C02/T1_L2")
 {% endhighlight %}
 
-Para ver la colección, intenta imprimirla como hiciste con el string.
+Para ver la colección, intente imprimirla como se hizo con el objeto string.
 
 {% highlight javascript %}
 print(L8_SR);
@@ -127,15 +127,15 @@ print(L8_SR);
 
 **¿Qué ocurre?**
 
-Earth Engine se demora - esto significa que su petición es demasiado grande, lo que tiene sentido ya que hay miles de imágenes en la colección de Landsat 8. Para evitar esto, intenta lo siguiente:
+Earth Engine se demora - esto significa que la petición es demasiado grande, lo que tiene sentido ya que hay miles de imágenes en la colección de Landsat 8. Para evitar esto, intenta lo siguiente:
 
 {% highlight javascript %}
 print(L8_SR.limit(5))
 {% endhighlight %}
 
-Esto te mostrará sólo las primeras cinco imágenes para que puedas ver la colección. Puedes ver el ID de la colección, las bandas, las características, cuáles son las imágenes de la colección y sus propiedades o metadatos.
+Esto mostrará sólo los metadatos de las primeras cinco imágenes de la colección. Puede ver el ID de la colección, las bandas, las características, cuáles son las imágenes de la colección, las bandas de cada imagen y sus propiedades.
 
-*Nota: Los desarrolladores siempre están agregando nuevas funcionalidades a la interfaz gráfica de usuario para que no tengamos que codificar. Como resultado, a veces habrá un método de apuntar y hacer clic para hacer algo que también se puede lograr escribiendo una o dos líneas de código. La función de "import" es un gran ejemplo de esto porque puedes importar una colección usando el botón "Import" en los metadatos o el comando "ImageCollection" escrito en JavaScript. Lo mismo, de dos maneras.*
+*Nota: Los desarrolladores siempre están agregando nuevas funcionalidades a la interfaz gráfica de usuario para que no tengamos que codificar. Como resultado, a veces habrá un método de apuntar y hacer clic para hacer algo que también se puede lograr escribiendo una o dos líneas de código. La función de "import" es un gran ejemplo de esto porque se puede importar una colección usando el botón "Import" en los metadatos o el comando "ImageCollection" escrito en JavaScript. Lo mismo, de dos maneras.*
 
 
 #### Seleccionar un área de estudio usando la herramienta Geometry
@@ -144,10 +144,10 @@ Las herramientas de dibujo geométrico situadas en la parte superior izquierda d
 
 1. Escriba "Tulúa, Valle del Cauca" en la barra de herramientas de búsqueda y pulse intro. Nos debería de llevar a dicha ciudad.
 2. En el lado izquierdo del mapa, haz clic en el pequeño icono del marcador. El cursor se convertirá en una cruz.
-3. Cambia el mapa y deja caer el cursor en el centro del lago.
-4. Ahora, ve a la ventana Geometry Imports que ha aparecido. En esa ventana, nombre el punto "tulua" y cambie el desplegable de **Geometry** a **FeatureCollection**.
+3. Mueva el cursor en el mapa y ubíquelo en el centro de la ciudad.
+4. Ahora, ve a la ventana Geometry Imports que ha aparecido. En esa ventana, cambie el nombre el punto a "tulua" y modifique el desplegable de **Geometry** a **FeatureCollection**.
 
-Ahora ha creado un nuevo objeto punto y lo ha cargado como una `FeatureCollection`. Ahora puede usar esta `FeatureCollection` como una forma de filtrar geográficamente conjuntos de datos sólo para tu región.
+Ahora ha creado un nuevo objeto con geometría de punto (un *feature*) y lo ha cargado como una `FeatureCollection`. Ahora puede usar esta `FeatureCollection` como una forma de filtrar geográficamente conjuntos de datos sólo para la región de interés.
 
 <br>
 <img src="../fig/02_Tulua.png" border = "10">
@@ -157,11 +157,11 @@ Ahora ha creado un nuevo objeto punto y lo ha cargado como una `FeatureCollectio
 
 #### Filtrar la Image Collection
 
-Uno de los mayores beneficios de la API de JavaScript frente a la de Python es la capacidad de renderizar rápidamente sobre la marcha geovisualizaciones de sus imágenes y resultados. Ahora vamos a visualizar una imagen de la colección de Landsat 8.
+Uno de los mayores beneficios de la API de JavaScript  es la capacidad de visualizar rápidamente  imágenes de entrada y los resultados que se vayan obteniendo. Ahora vamos a visualizar una imagen de la colección de Landsat 8.
 
 Vamos a filtrar la colección a una imagen por:
 
-  - nuestra área de estudio que definimos con un punto
+  - nuestra área de estudio que hemos definido con un punto
   - sólo un año de imágenes (2022)
   - clasificando las imágenes por la cobertura total de nubes (de menos nubes a más nubes)
   - eligiendo la imágen superior (menos nublada)
@@ -184,13 +184,13 @@ var image = ee.Image((L8_SR)
 
 {% endhighlight %}
 
-Usa una declaración impresa para comprobar lo que acabamos de hacer:
+Usa una declaración para imprimir los metadatos de la imagen que acabamos de obtener:
 
 {% highlight javascript %}
 print(image, 'Tulua L8 image')
 {% endhighlight %}
 
-Ahora hemos filtrado TODO el archivo de Landsat 8 hasta la imagen menos nublada para nuestra área de estudio en 2022. Sin embargo, todavía tenemos que visualizarla, lo que haremos usando la función `Map.addLayer`.
+Ahora hemos filtrado TODO el archivo de Landsat 8 para obtener la imagen menos nublada para nuestra área de estudio en 2022. Sin embargo, todavía tenemos que visualizarla, lo que haremos usando la función `Map.addLayer`.
 
 *Nota: ¿No está seguro de lo que hace esta función? Búscala en la pestaña* **Docs** *para aprender los argumentos.*
 
@@ -206,29 +206,29 @@ El mapa no luce tan bien. Definamos qué bandas usar y completemos algunos otros
 Map.addLayer(image, {bands: ['B4', 'B3', 'B2'], min:8000, max: 30000, gamma: 3}, 'Better L8 Image');
 {% endhighlight %}
 
-Aunque a menudo no es posible conocer el mínimo, máximo y el estiramiento óptimos. Se ha añadido la herramienta **Layer Manager** que se encuentra en la esquina superior derecha del mapa. Esta barra de herramientas le permitirá hacer clic en las capas, así como ajustar su transparencia y configurar interactivamente los parámetros de visualización de cada capa. Puede usar esta herramienta para averiguar qué parámetros pasar al `Map.addLayer`.
+Aunque a menudo no es posible conocer el mínimo, máximo y el valor de gamma óptimos. Para ello sirve la herramienta **Layer Manager** que se encuentra en la esquina superior derecha del mapa. Esta herramienta le permitirá activar o desactivar las capas, así como ajustar su transparencia y configurar interactivamente los parámetros de visualización de cada capa. Puede usar esta herramienta para averiguar qué parámetros pasar al `Map.addLayer`.
 
 <br>
 <img src="../fig/02_layermanagerN.png" border = "10">
 <br><br>
 
-También puedes cambiar entre los botones **Map** o **Satellite** en la parte superior derecha del panel del mapa para cambiar la capa base.
+También puede cambiar entre los botones **Map** o **Satellite** en la parte superior derecha del panel del mapa para cambiar la capa base.
 
 Para más información sobre la visualización de imágenes, vea el <a href="https://developers.google.com/earth-engine/image_visualization" target="_blank">GEE Visualization Guide</a> o la <a href="https://developers.google.com/earth-engine/tutorial_api_02" target="_blank">GEE Visualization tutorial</a>.
 
 #### La pestaña Inspector
 
-Otra forma de inspeccionar y explorar su imagen es a través de la herramienta de inspección. La consola del Inspector le permite consultar el mapa de forma interactiva. Si tienes la imagen cargada, te dará información sobre esa imagen en el punto en el que también hiciste clic.
+Otra forma de inspeccionar y explorar una imagen es a través de la herramienta de inspección. La consola del Inspector le permite consultar el mapa de forma interactiva. Si tienes la imagen cargada, GEE dará información sobre esa imagen en el punto en el que se hizo clic.
 
 En la parte superior derecha, cambie a la pestaña **Inspector** y haga clic en el mapa donde hay tierra. Ahora haga clic donde hay agua. Cambie entre el gráfico y la lista de valores.
 
-## COMENCEMOS A PRACTICAR
+## SIGAMOS PRACTICANDO
 
-Practica por su cuenta con los parámetros de visualización y utiliza el Inspector para explorar el mapa, haciendo clic sobre el Valle del Cauca, las ciudades, los cultivos, los bosques y el agua.
+Practique por su cuenta con los parámetros de visualización y utiliza el Inspector para explorar el mapa, haciendo clic sobre el Valle del Cauca, las ciudades, los cultivos, los bosques y el agua. Tome nota de los valores de reflectancia de las diferentes bandas en cada tipo de cobertura.
 
-Si ya lo ha hecho, puede practicar colocando el punto de interés en otro lugar y mirar una imagen diferente de su lugar favorito.
+Si ya ha ejecutado las instrucciones indicadas anteriormente, practique cambiando las fechas de interés  y obteniendo la imagen menos nublada de la zona de interés en ese periodo.
 
-También puede cambiar las fechas para observar una imagen de la época de verano y ver cómo cambia la reflectancia de acuerdo con la época del año.
+También puede obtener  imágenes para dos épocas diferentes y  observar si existen cambios en la reflectancia de diferentes coberturas  de acuerdo con la época del año.
 
 ## 4. Obtener ayuda
 
@@ -274,7 +274,8 @@ Para obtener instrucciones detalladas de Google sobre cómo subir, compartir y a
 
 
 #### Exportando y la pestaña Tasks
-En lugar de imprimir en la consola, para tareas más grandes puede que quieras exportar las salidas a tu Google Drive o Cloud Storage usando las funciones `Export` en tu código. Cuando se ejecutan, estas generan una nueva tarea en la pestaña `Task` en el panel superior derecho. Necesitarás entonces "Run" esta tarea para iniciar realmente la transferencia de información. Una vez que inicie una tarea, se le pedirá que introduzca los detalles sobre la resolución, tamaño, formato y destino si no lo incluyó en su código. Puedes pasar el ratón por encima de la tarea y hacer clic en el icono "?" para ver el estado y también para obtener el número de la tarea. Si tu tarea no se está ejecutando, puedes compartir este número como referencia en el foro de desarrolladores.
+
+En lugar de imprimir en la consola, para tareas más grandes puede que quieras exportar las salidas a su Google Drive o Cloud Storage usando las funciones `Export` en su código. Cuando se ejecutan, estas generan una nueva tarea en la pestaña `Task` en el panel superior derecho. Necesitará entonces "Run" esta tarea para iniciar realmente la transferencia de información. Una vez que inicie una tarea, se le pedirá que introduzca los detalles sobre la resolución, tamaño, formato y destino si no lo incluyó en su código. Puede pasar el ratón por encima de la tarea y hacer clic en el icono "?" para ver el estado y también para obtener el número de la tarea. Si su tarea no se está ejecutando, puede compartir este número como referencia en el foro de desarrolladores.
 
 Exportaremos información vectorial en <a href="https://ials.github.io/GEE_BASICO/03-load-imagery/" target="_blank">Leccion 03 Cargar Imágenes</a> de este tutorial.
 

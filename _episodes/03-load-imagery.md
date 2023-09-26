@@ -19,6 +19,7 @@ keypoints:
 - Las imágenes y las tablas pueden ser exportadas para su uso posterior con GEE o otras herramientas como **QGIS**
 ---
 
+### IALS - 06.10.23
 
 # Descripción general: Catálogo de imágenes satelitales a escala regional
 
@@ -47,18 +48,18 @@ Para la mayoría de las aplicaciones a escala regional, se tienen que combinar m
 
 # Ejercicio: Flujo básico de trabajo GEE
 
-Aquí, aprovecharemos GEE para crear un *composite* que represente el pico de la temporada de crecimiento de cultivos para una zona de interés.
+Aquí, aprovecharemos GEE para crear un *composite* que registre el estado de la vegetación para una zona de interés.
 
 
 ### Image Collections
 
-Una pila o serie temporal de imágenes se llaman `Image Collections`. Cada fuente de datos disponible en GEE tiene su propia Image Collection y su propio ID (por ejemplo, el [Landsat 5 SR collection](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT05_C01_T1_SR), o el producto [CHIRPS Daily: Climate Hazards Group InfraRed Precipitation with Station Data (version 2.0 final)](https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY). También se puede crear Image Collection a partir de imágenes individuales o fusionar colecciones existentes. Puede encontrar más información sobre las Image Collection [here in the GEE Developer's Guide](https://developers.google.com/earth-engine/ic_creating).
+Una pila o serie temporal de imágenes se conoce como `Image Collections`. Cada fuente de datos disponible en GEE tiene su propia Image Collection y su propio ID (por ejemplo, el [Landsat 5 SR collection](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT05_C01_T1_SR), o el producto [CHIRPS Daily: Climate Hazards Group InfraRed Precipitation with Station Data (version 2.0 final)](https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY). También se puede crear Image Collection a partir de imágenes individuales o fusionar colecciones existentes. Puede encontrar más información sobre las *Image Collection* [aquí en la guía de desarrolladores de GEE](https://developers.google.com/earth-engine/ic_creating).
 
 Para generar imágenes que cubran grandes áreas espaciales y para llenar los vacíos de una imágen debido a las nubes, etc., podemos cargar una `ImageCollection` completa, pero filtrar la colección para devolver sólo los períodos de tiempo o las ubicaciones espaciales que sean de interés. Hay filtros de acceso directo para los que se utilizan comúnmente (imageCollection.filterDate(), imageCollection.filterBounds()...), pero pueden utilizarse la mayoría de los filtros de la sección `ee.Filter()` de la pestaña Docs. Más información sobre [filters on the Developer's Guide](https://developers.google.com/earth-engine/ic_filtering).
 
 ### Cargar archivos vectoriales
 
-Trabajaremos en la creación de un *composite* para el departamento del Valle. La forma más fácil de filtrar una ubicación irregular sin tener que identificar las rutas y filas de los mosaicos de la imagen satelital es usar un polígono vectorial.
+Trabajaremos en la creación de un *composite* para el departamento del Valle. La forma más fácil de filtrar una ubicación irregular sin tener que identificar el identificador de las imágenes (es decir, sin indicar los valores PATH y ROW de la escena de interés) es usar un polígono vectorial (representado en un *feature* o en un *feature collection*).
 
 Hay tres maneras de obtener datos de vectores en GEE:
 
