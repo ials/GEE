@@ -1,7 +1,7 @@
 ---
 title: "Accesso al catálogo de imágenes de satélite"
-teaching: 60
-exercises: 60
+teaching: 20
+exercises: 40
 questions:
 - ¿Cómo acceder a un catálogo de imágenes satelitales?
 - ¿Cómo realizar mosaicos?

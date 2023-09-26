@@ -1,6 +1,6 @@
 ---
 title: "Acceso a GEE e introducción a JavaScript"
-teaching: 30
+teaching: 15
 exercises: 30
 questions:
 - ¿Cómo obtener una cuenta en GEE?
@@ -83,7 +83,7 @@ var test2 = 'Me siento completo!';
 
 {% highlight javascript %}
 // Los paréntesis se utilizan para pasar parámetros a las funciones
-print('Esta cadena de texto se imprimirá en la pestaña Console.');
+print('Esta cadena de texto se imprime en la Consola.');
 
 /* Los corchetes se utilizan para los elementos de una lista.
 El índice cero se refiere al primer elemento de una lista*/
@@ -92,7 +92,7 @@ print(myList[0]); // would print 'café'
 {% endhighlight %}
 
 <br>
-<img src="../fig/00_js1.png" border = "10">
+<img src="../fig/00_js1.png" width="50%" height="50%" border = "10">
 <br><br>
 
 ##### Uso de diccionarios.
@@ -109,7 +109,7 @@ print(myDict.color);
 {% endhighlight %}
 
 <br>
-<img src="../fig/00_js2.png" border = "10">
+<img src="../fig/00_js2.png" width="50%" height="50%" border = "10">
 <br><br>
 
 ##### Funciones
@@ -126,7 +126,7 @@ print(myHelloFunction('parce'));
 {% endhighlight %}
 
 <br>
-<img src="../fig/00_js3.png" border = "10">
+<img src="../fig/00_js3.png" width="50%" height="50%" border = "10">
 <br><br>
 
 Esta es otra función
@@ -142,10 +142,11 @@ print(cuadrado(81));
 {% endhighlight %}
 
 <br>
-<img src="../fig/00_js4.png" border = "10">
+<img src="../fig/00_js4.png" width="50%" height="50%" border = "10">
 <br><br>
 
-##### Quizz práctico
+
+#### Quizz práctico
 
 Escriba una función que sume dos números.  Pruebe la función con algunas sumas.
 

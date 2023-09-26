@@ -1,6 +1,6 @@
 ---
 title: "Editor de código"
-teaching: 45
+teaching: 15
 exercises: 45
 questions:
 - "¿Cuáles son las principales características del Code Editor?"
@@ -225,7 +225,7 @@ En la parte superior derecha, cambie a la pestaña **Inspector** y haga clic en 
 
 ## SIGAMOS PRACTICANDO
 
-Practique por su cuenta con los parámetros de visualización y utiliza el Inspector para explorar el mapa, haciendo clic sobre el Valle del Cauca, las ciudades, los cultivos, los bosques y el agua. Tome nota de los valores de reflectancia de las diferentes bandas en cada tipo de cobertura.
+Practique por su cuenta con los parámetros de visualización y utilice el Inspector para explorar el mapa, haciendo clic sobre el Valle del Cauca, las ciudades, los cultivos, los bosques y el agua. Tome nota de los valores de reflectancia de las diferentes bandas en cada tipo de cobertura.
 
 Si ya ha ejecutado las instrucciones indicadas anteriormente, practique cambiando las fechas de interés  y obteniendo la imagen menos nublada de la zona de interés en ese periodo.
 
@@ -239,7 +239,7 @@ Hay muchas formas de conseguir ayuda en el Code Editor. Familiarizarse con estas
 
 Al lado de la pestaña **Scripts** está la pestaña **Docs**, que tiene la documentación completa y buscable de la API de JavaScript para cada función. La documentación está organizada por tipo de datos GEE. Cada tipo de datos tiene un conjunto específico de funciones que se pueden aplicar a él.
 
-#### El botón Help
+#### El botón de Ayuda
 
 El botón **Help** es una puerta de entrada a muchos recursos, incluyendo enlaces a:
 
@@ -268,13 +268,13 @@ Además de usar todos los increíbles archivos de Google, los usuarios también 
 
 
 <br>
-<img src="../fig/02_sharingassetsN.png" border = "10">
+<img src="../fig/02_sharingassetsN.png" width="70%" height="70%" border = "10">
 <br><br>
 
 Para obtener instrucciones detalladas de Google sobre cómo subir, compartir y administrar activos, consulte el <a href="https://developers.google.com/earth-engine/asset_manager" target="_blank">Assets Manager page</a> en el sitio web de GEE.
 
 
-#### Exportando y la pestaña Tasks
+#### Exportación y la pestaña Tasks
 
 En lugar de imprimir en la consola, para tareas más grandes puede que quieras exportar las salidas a su Google Drive o Cloud Storage usando las funciones `Export` en su código. Cuando se ejecutan, estas generan una nueva tarea en la pestaña `Task` en el panel superior derecho. Necesitará entonces "Run" esta tarea para iniciar realmente la transferencia de información. Una vez que inicie una tarea, se le pedirá que introduzca los detalles sobre la resolución, tamaño, formato y destino si no lo incluyó en su código. Puede pasar el ratón por encima de la tarea y hacer clic en el icono "?" para ver el estado y también para obtener el número de la tarea. Si su tarea no se está ejecutando, puede compartir este número como referencia en el foro de desarrolladores.
 
@@ -288,4 +288,4 @@ Para instrucciones detalladas sobre Export, véase la <a href="https://developer
 Enlace del código completo usado en esta lección:
 <a href="https://code.earthengine.google.com/785e05ebeb16b45744b860935a98ffab" target="_blank">https://code.earthengine.google.com/785e05ebeb16b45744b860935a98ffab</a>
 
-### Practique con el Code Editor!!!
+### Practique con el Editor de  Código !!!

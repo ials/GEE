@@ -1,10 +1,11 @@
 ---
 title: "Introducción a Google Earth Engine"
-teaching: 30
-exercises: 30
+teaching: 15
+exercises: 45
 questions:
-- "¿Qué es Google Earth Engine?"
+- "¿Qué es Google Earth Engine (GEE)?"
 - "¿Cuáles son las ventajas y limitaciones de esta plataforma?"
+- "¿Cuáles son los tipos de objetos disponibles para programar en GEE?"
 objectives:
 - Comprender el poder de Google Earth Engine
 - Adquirir conocimientos básicos de las estructura de la plataforma y su filosofía
@@ -168,8 +169,8 @@ print('esta es mi lista, myList);
 
 Esta es una función rudimentaria que utiliza la instrucción *FOR* para elevar al cuadrado cada item de una lista:
 {% highlight javascript %}
-// El metodo de iterar es muy usado en programación
-// pero no se recomienda al usar GEE 
+// El metodo de iterar una colección de objetos usando FOR  
+// no se recomienda al programar en GEE 
 
 // Esta es una funcion que utiliza la instruccion FOR
 // para elevar al cuadrado cada item de una lista
