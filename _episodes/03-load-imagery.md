@@ -39,8 +39,7 @@ Para la mayoría de las aplicaciones a escala regional, se tienen que combinar m
 
 # Ejercicio: Flujo básico de trabajo GEE
 
-Aquí, aprovecharemos GEE para crear un *composite* que registre el estado de la vegetación para una zona de interés.
-
+Aquí, aprovecharemos GEE para crear un *composite* que registre el estado  de la vegetación para una zona de interés durante un periodo determinado.
 
 ### Image Collections
 

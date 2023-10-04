@@ -77,16 +77,16 @@ Guarde los scripts haciendo clic en el botón **Save**. Para incluir un mensaje 
 
 *Note: Si no realizó ningún cambio en el script, el botón* **Save** *se oscurecerá.*
 
-Si se observa en el panel superior izquierdo, se podrá ver que el script está ahora guardado en tu gestor de **Scripts**. Tienes tres categorías de scripts: privado, compartido y ejemplos. Cada script está respaldado en Git. Si pasas el ratón por encima del nombre del script, aparecerán tres iconos que te permitirán volver a versiones anteriores, renombrar o eliminar el script. También puedes crear carpetas y hacer clic y arrastrar los scripts a esos directorios.
+Si se observa en el panel superior izquierdo, se podrá ver que el script está ahora guardado en su gestor de **Scripts**. Tienes tres categorías de scripts: privado, compartido y ejemplos. Cada script está respaldado en Git. Si pasa el ratón por encima del nombre del script, aparecerán tres iconos que  permitirán volver a versiones anteriores, renombrar o eliminar el script. También puede crear carpetas y hacer clic y arrastrar los scripts a esos directorios.
 
 
-*Nota/advertencia: Si cambias el nombre de un script, su historial de revisiones desaparece.*
+*Nota/advertencia: Si cambia el nombre de un script, su historial de revisiones desaparece.*
 
 #### Compartiendo Scripts
 
-Se puede compartir una versión estática de los scripts haciendo clic en **Get Link**. Aparecerá una url en el campo de dirección de tu navegador. Comparte este enlace para dar a otras personas acceso a tu script como *it is*. Si continúas haciendo ediciones en este script, no se actualizarán en la versión enlazada. Esta opción es útil para compartir ejemplos e instantáneas de scripts con otras personas.
+Se puede compartir una versión estática de los scripts haciendo clic en **Get Link**. Aparecerá una url en el campo de dirección de su navegador. Comparte este enlace para dar a otras personas acceso a tu script como *it is*. Si continúa haciendo ediciones en este script, no se actualizarán en la versión enlazada. Esta opción es útil para compartir ejemplos e instantáneas de scripts con otras personas.
 
-    **Consejo importante: Cuando se publique en el foro de ayuda, incluya SIEMPRE el enlace de su script para que la gente pueda ayudarte a solucionar el
+    **Consejo importante: Cuando solicite soporte en el foro de ayuda, incluya SIEMPRE el enlace de su script para que la gente pueda ayudarle a solucionar el
 	problema. Asegúrese de que todos los assets personales que utilice sean compartidos para que el script se ejecute para otros.**
 
 #### Únase al repositorio compartido
@@ -100,7 +100,7 @@ Usted debería de haber accedido al repositorio de scripts compartidos en el Cod
 - Acceder al repositorio compartido haciendo clic en este enlace: <a href="https://code.earthengine.google.com/?accept_repo=users/ivanlizarazo/GEE_BASICO" target="_blank">https://code.earthengine.google.com/?accept_repo=users/ivanlizarazo/GEE_BASICO</a>
 - En el Code Editor, vaya a la pestaña **Scripts** en el panel superior izquierdo, desplázate hacia abajo y expande la sección "Shared". Un directorio llamado *GEE_BASIC0* debería aparecer con versiones de sólo lectura de los scripts completos de cada episodio.
 
-Cualquier actualización se reflejará en estas versiones del script. Como todos los scripts GEE, estas son versiones controladas. Los permisos de lectura o escritura para individuos o grupos se pueden establecer en el Code Editor usando el pequeño icono gris de compartir que aparece a la derecha si pasas el ratón por encima del nombre del directorio en la pestaña *Scripts*. Deberías tener acceso de sólo lectura a este repositorio.
+Cualquier actualización se reflejará en estas versiones del script. Como todos los scripts GEE, estas son versiones controladas. Los permisos de lectura o escritura para individuos o grupos se pueden establecer en el Code Editor usando el pequeño icono gris de compartir que aparece a la derecha si pasas el ratón por encima del nombre del directorio en la pestaña *Scripts*. Debería tener acceso de sólo lectura a este repositorio.
 
 <br>
 
@@ -185,7 +185,7 @@ var image = ee.Image((L8_SR)
 
 {% endhighlight %}
 
-Usa una declaración para imprimir los metadatos de la imagen que acabamos de obtener:
+Use la siguiente instrucción para imprimir los metadatos de la imagen que acabamos de obtener:
 
 {% highlight javascript %}
 print(image, 'Tulua L8 image')
@@ -199,15 +199,17 @@ Ahora hemos filtrado TODO el archivo de Landsat 8 para obtener la imagen menos n
 Map.addLayer(image,{},  'L8 Image');
 {% endhighlight %}
 
+Observe que hay que pasar tres parámetros para agregar una capa al "Mapa": el primero es el objeto que se quiere visualizar; el segundo es la "forma" de visualización; y el tercero es el "nombre" que se usará para identificar la capa.
+
 #### Gestionar las capas
 
-El mapa no luce tan bien. Definamos qué bandas usar y completemos algunos otros parámetros de visualización usando el administrador de capas. Usaremos la reflectancia en el rango visible desde el rojo (Banda 4), el verde (Banda 3) y el azul (Banda 2) para hacer una imagen de color verdadero.  Podemos usar los conocimientos previos para hacer una imagen que luzca mejor:
+El mapa no luce muy bien. Definamos qué bandas usar y completemos algunos otros parámetros de visualización usando el administrador de capas. Usaremos la reflectancia en el rango visible en el canal rojo (Banda 4), el canal verde (Banda 3) y el canal azul (Banda 2) para visualizar una imagen en color "verdadero".  Podemos usar este conocimientos previos para hacer una imagen que luzca mejor:
 
 {% highlight javascript %}
 Map.addLayer(image, {bands: ['B4', 'B3', 'B2'], min:8000, max: 30000, gamma: 3}, 'Better L8 Image');
 {% endhighlight %}
 
-Aunque a menudo no es posible conocer el mínimo, máximo y el valor de gamma óptimos. Para ello sirve la herramienta **Layer Manager** que se encuentra en la esquina superior derecha del mapa. Esta herramienta le permitirá activar o desactivar las capas, así como ajustar su transparencia y configurar interactivamente los parámetros de visualización de cada capa. Puede usar esta herramienta para averiguar qué parámetros pasar al `Map.addLayer`.
+A menudo no es posible conocer el mínimo, máximo y el valor de gamma óptimos. Para ello sirve la herramienta **Layer Manager** que se encuentra en la esquina superior derecha del mapa. Esta herramienta permite activar o desactivar las capas, así como ajustar su transparencia y configurar interactivamente los parámetros de visualización de cada capa. Puede usar esta herramienta para averiguar qué parámetros pasar al `Map.addLayer`.
 
 <br>
 <img src="../fig/02_layermanagerN.png" border = "10">

@@ -1,7 +1,7 @@
 ---
 title: "Introducción a Google Earth Engine"
-teaching: 15
-exercises: 45
+teaching: 20
+exercises: 40
 questions:
 - "¿Qué es Google Earth Engine (GEE)?"
 - "¿Cuáles son las ventajas y limitaciones de esta plataforma?"
@@ -159,13 +159,35 @@ Cada uno de los objetos del lado del servidor (p.ej. ee.ImageCollection, ee.Imag
 
 En esta sección seguimos conociendo un poco más de JavaScript en GEE.
 
-
 Se puede crear una lista de números así:
 {% highlight javascript %}
 // This generates a list of numbers from 1 to 10.
 var myList = ee.List.sequence(1, 10);
 print('esta es mi lista, myList);
 {% endhighlight %}
+
+Se puede acceder a los elementos de la lista así:
+{% highlight javascript %}
+// Obtener el segundo elemento de la lista
+print('el segundo elemento es', myList.get(1));
+{% endhighlight %}
+
+<br>
+<img src="../fig/01_lista_js_1.png" width="50%" height="50%" border = "10">
+<br><br>
+
+
+// El metodo de iterar es muy usado en programación
+// Imprima secuencialmente los elementos 
+var n = myList.size().getInfo();
+for (var i = 0; i < n; i += 1) {
+  print(myList.get(i));
+}
+{% endhighlight %}
+
+<br>
+<img src="../fig/01_lista_js_2.png" width="50%" height="50%" border = "10">
+<br><br>
 
 Esta es una función rudimentaria que utiliza la instrucción *FOR* para elevar al cuadrado cada item de una lista:
 {% highlight javascript %}
@@ -205,7 +227,7 @@ print(squares2);
 {% endhighlight %}
 
 <br>
-<img src="../fig/01_more_js.png" width="50%" height="50%" border = "10">
+<img src="../fig/01_more_js_3.png" width="50%" height="50%" border = "10">
 <br><br>
 
 #### Quizz práctico
