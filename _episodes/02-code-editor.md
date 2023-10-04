@@ -266,7 +266,7 @@ Un último lugar donde puede obtener ayuda es desplazándose hacia abajo y miran
 
 #### Importar imágenes y archivos vectoriales
 
-Además de usar todos los increíbles archivos de Google, los usuarios también pueden importar sus propios datos como imágenes (rasters) o tablas (vectores). La pestaña **Assets** de la izquierda es donde se pueden importar, compartir y administrar estos propios activos. Puede subir imágenes o tablas (datos vectoriales) allí.
+Además de usar todos los archivos de Google, los usuarios también pueden importar sus propios datos como imágenes (rasters) o tablas (vectores). La pestaña **Assets** de la izquierda es donde se pueden importar, compartir y administrar estos propios activos. Puede subir imágenes o tablas (datos vectoriales) allí.
 
 
 <br>

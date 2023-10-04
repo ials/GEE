@@ -173,7 +173,7 @@ print('el segundo elemento es', myList.get(1));
 {% endhighlight %}
 
 <br>
-<img src="../fig/01_lista_js_1.png" width="50%" height="50%" border = "10">
+<img src="../fig/01_more_js_1.png" width="50%" height="50%" border = "10">
 <br><br>
 
 
@@ -186,7 +186,7 @@ for (var i = 0; i < n; i += 1) {
 {% endhighlight %}
 
 <br>
-<img src="../fig/01_lista_js_2.png" width="50%" height="50%" border = "10">
+<img src="../fig/01_more_js_2.png" width="50%" height="50%" border = "10">
 <br><br>
 
 Esta es una función rudimentaria que utiliza la instrucción *FOR* para elevar al cuadrado cada item de una lista:
