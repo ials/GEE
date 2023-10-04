@@ -176,7 +176,7 @@ print('el segundo elemento es', myList.get(1));
 <img src="../fig/01_more_js_1.png" width="50%" height="50%" border = "10">
 <br><br>
 
-
+{% highlight javascript %}
 // El metodo de iterar es muy usado en programación
 // Imprima secuencialmente los elementos 
 var n = myList.size().getInfo();
