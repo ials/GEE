@@ -7,8 +7,8 @@ questions:
 - "¿Cuáles son las ventajas y limitaciones de esta plataforma?"
 - "¿Cuáles son los tipos de objetos disponibles para programar en GEE?"
 objectives:
-- Comprender el poder de Google Earth Engine
-- Adquirir conocimientos básicos de las estructura de la plataforma y su filosofía
+- Comprender el funcionamiento de Google Earth Engine
+- Adquirir conocimientos básicos de la estructura de la plataforma 
 - Entender los tipos de objetos usados en GEE
 keypoints:
 - " Google Earth Engine es una herramienta útil para realizar procesos de percepción remota."
