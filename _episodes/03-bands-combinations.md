@@ -20,6 +20,7 @@ keypoints:
 - La visualización de una imagen requiere ajuste de contraste y corrección gamma 
 ---
 
+## IALS - 17.10.2023
 
 # Descripción general: Imágenes Landsat
 
