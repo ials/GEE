@@ -98,7 +98,7 @@ Map.addLayer(suerte, estilo2, 'Suerte', false);
 {% endhighlight %}
 
 <br>
-<img src="../fig/03_suertes.png" border = "10"width="50%" height="50%">
+<img src="../fig/03_suertes.png" border = "10" width="50%" height="50%">
 <br><br>
 
 
@@ -151,7 +151,7 @@ print('Esta es la imagen con menos nubes: ', image);
 Al correr el código anterior, en la consola podemos ver la información solicitada:
 
 <br>
-<img src="../fig/03_L8-metadatos.png" border = "10" width="75%" height="75%">
+<img src="../fig/03_L8-metadatos.png" border = "10" width="70%" height="70%">
 <br><br>
 
 ### Visualizacion de imagenes
@@ -177,7 +177,7 @@ Map.addLayer(image,p_ajuste, 'imagen menos nubosa- AJUSTADA');
 Al correr el código anterior, en el mapa podemos ver las dos visualizaciones:
 
 <br>
-<img src="../fig/03_L8-natural-color.png" border = "10" width="75%" height="75%">
+<img src="../fig/03_L8-natural-color.png" border = "10" width="80%" height="80%">
 <br><br>
 
 ### Rescalamiento de niveles digitales
@@ -222,7 +222,7 @@ Map.addLayer(suerte, {}, 'suerte de juana');
 Al correr el código anterior, en el mapa veremos la imagen rescalada:
 
 <br>
-<img src="../fig/03_L8-rescalada.png" border = "10" width="75%" height="75%">
+<img src="../fig/03_L8-rescalada.png" border = "10" width="80%" height="80%">
 <br><br>
 
 Use la pestaña Inspector en la ventana de la derecha para indagar los valores de reflectancia en algunos sitios conocidos.
@@ -230,7 +230,7 @@ Por ejemplo si usted hace clic en el centro del lote más al oriente de La Juana
 
 
 <br>
-<img src="../fig/03_L8r-inspector.png" border = "10" width="75%" height="75%">
+<img src="../fig/03_L8r-inspector.png" border = "10" width="65%" height="65%">
 <br><br>
 
 ### Visualización en falso color
@@ -253,7 +253,7 @@ Map.addLayer(image_SR,o_ajuste,'RGB572 ajustada');
 
 El resultado es el siguiente:
 <br>
-<img src="../fig/03_RGB572.png" border = "10" width="75%" height="75%">
+<img src="../fig/03_RGB572.png" border = "10" width="80%" height="80%">
 <br><br>
 
 ### Recorte de imágenes
@@ -278,7 +278,7 @@ Map.addLayer(recorteL8col.sort('CLOUD_COVER').first(), p_ajuste, 'imagen colecci
 
 El resultado es el siguiente:
 <br>
-<img src="../fig/03_Recorte.png" border = "10" width="75%" height="75%">
+<img src="../fig/03_Recorte.png" border = "10" width="80%" height="80%">
 <br><br>
 
 
