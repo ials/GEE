@@ -30,26 +30,17 @@ Los datos globales de Landsat se dividen en escenas de ~180 km<sup>2</sup>, con 
 <img src="../fig/03_worldLandsat.png" width="80%" height="80%" />
 <sub>*USGS Landsat archive holdings as of January 1, 2015 (Wulder et al. (2016)).*</sub>
 
-<img src="https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2013/76fuygfd.gif" width="100%" height="100%" />
-<sub>*Forest loss in Sumatra's Riau province, Indonesia, 2000-2012. Credit: Hansen, Potapov, Moore, Hancher et al., 2013*</sub>
--->
-<br>
-<!--**455 escenas de Landsat cubren los Estados Unidos:**-->
-<br>
-<img src="../fig/03_MeanderCutTumbesRiver.gif" border = "10" width="80%" height="80%">
-<br><br>
 
-<br>
-<!--**455 escenas de Landsat cubren los Estados Unidos:**-->
-<br>
-<img src="../fig/03_IlegalMiningAndMeanderMigration.gif" border = "10" width="80%" height="80%">
-<br><br>
+En caso que se quiera saber cuál es la identificación de la escena Landsat que cubre una zona de interés se puede usar [esta herramienta desarollada por USGS](https://landsat.usgs.gov/landsat_acq#convertPathRow).  En la siguiente figura, se ilustra el resultado de indicar las coordenadas geográficas de una zona de interés (en este caso, la ciudad de Tulúa).  Como puede verse la escena Landsat que cubre la mayor parte del Valle del Cauca tiene Path =009 y Row=057
 
-Para la mayoría de las aplicaciones  tienen que combinar múltiples imágenes de satélite para cubrir completamente la extensión espacial y el cubrimiento temporal requeridos. Google Earth Engine (GEE) es particularmente adecuado para estas tareas.
+<img src="../fig/03_Path_Row_converter.png" width="100%" height="100%" />
+<sub>*Landsat Acquisition Tool*</sub>
+
+La mayoría de las aplicaciones que usan GEE deben combinar múltiples escenas para cubrir completamente la extensión espacial y el cubrimiento temporal requeridos. Google Earth Engine (GEE) es una plataforma muy útil para estas tareas.
 
 # Ejercicio: Flujo básico de trabajo GEE
 
-Aquí, usaremos GEE para obtener una colección de imágenes Landsat para una zona de interés y un período determinado.
+Aquí, usaremos GEE para obtener una colección de imágenes Landsat para una zona de interés que cubran un período determinado.
 
 ### Image Collections
 
@@ -59,16 +50,15 @@ Para generar imágenes que cubran grandes áreas espaciales y para llenar los va
 
 ### Cargar archivos vectoriales
 
-Trabajaremos en la obtención de un *image collection* para una zona de interés. La forma más fácil de filtrar una ubicación irregular sin tener que identificar las rutas y filas de los mosaicos de la  escena Landsat es usar un polígono vectorial.
+Trabajaremos en la obtención de un *image collection* para una zona de interés. La forma más fácil de filtrar una ubicación irregular sin tener que identificar los valores de Path y Row de la  escena Landsat apropiada es usar un polígono con los límites de la zona de estudio, en formato vectorial.
 
 Hay tres maneras de obtener datos de vectores en GEE:
 
-  * [Cargar un shapefile](https://developers.google.com/earth-engine/importing) directamente a su carpeta personal *Asset* en el panel superior izquierdo. Puedes crear subcarpetas y establecer permisos para compartir según sea necesario.
+  * [Cargar un shapefile](https://developers.google.com/earth-engine/importing) directamente a su carpeta personal *Asset* en el panel superior izquierdo. Se pueden crear subcarpetas y establecer permisos para compartir según sea necesario.
   * Utilizar un conjunto de datos de vectores existente en GEE. [Navegue por el catálogo de datos vectoriales aquí](https://developers.google.com/earth-engine/vector_datasets).
-  * Dibuje manualmente puntos, líneas y polígonos usando las herramientas de geometría del Code Editor.
+  * Dibujar manualmente puntos, líneas y polígonos usando las herramientas de geometría del Code Editor y teniendo como referencia alguna imagen.
 
-Aquí, usaremos un conjunto de datos previamente cargado en GEE que representa las "suertes" de la Hacienda La Juana.
-
+Aquí, usaremos un conjunto de datos previamente "subido" a GEE como "activo" (asset), el cual representa las "suertes" de la Hacienda La Juana.
 
 {% highlight javascript %}
 // cargar un polígono de suertes previamente importado a GEE
