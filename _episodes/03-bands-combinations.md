@@ -27,7 +27,7 @@ keypoints:
 Los datos globales de Landsat se dividen en escenas de ~180 km<sup>2</sup>, con identificadores únicos de path/row. *<a href="https://www.sciencedirect.com/science/article/abs/pii/S0034425715302194" target="_blank">Wulder et al. (2016)</a>* indican  que cada escena Landsat es obtenida cada 16 días  (aproximadamente 45 veces al año). Los bordes de cada escena se superponen, proporcionando una mayor frecuencia temporal en estas áreas. Sin embargo, los cielos nublados durante el paso de los satélites y otras anomalías de adquisición hacen que ciertas escenas o píxeles sean inutilizables.
 
 
-<img src="../fig/03_worldLandsat.png" width="100%" height="100%" />
+<img src="../fig/03_worldLandsat.png" width="80%" height="80%" />
 <sub>*USGS Landsat archive holdings as of January 1, 2015 (Wulder et al. (2016)).*</sub>
 
 <img src="https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2013/76fuygfd.gif" width="100%" height="100%" />
@@ -36,13 +36,13 @@ Los datos globales de Landsat se dividen en escenas de ~180 km<sup>2</sup>, con 
 <br>
 <!--**455 escenas de Landsat cubren los Estados Unidos:**-->
 <br>
-<img src="../fig/03_MeanderCutTumbesRiver.gif" border = "10">
+<img src="../fig/03_MeanderCutTumbesRiver.gif" border = "10" width="80%" height="80%">
 <br><br>
 
 <br>
 <!--**455 escenas de Landsat cubren los Estados Unidos:**-->
 <br>
-<img src="../fig/03_IlegalMiningAndMeanderMigration.gif" border = "10">
+<img src="../fig/03_IlegalMiningAndMeanderMigration.gif" border = "10" width="80%" height="80%">
 <br><br>
 
 Para la mayoría de las aplicaciones  tienen que combinar múltiples imágenes de satélite para cubrir completamente la extensión espacial y el cubrimiento temporal requeridos. Google Earth Engine (GEE) es particularmente adecuado para estas tareas.
@@ -222,7 +222,7 @@ Map.addLayer(suerte, {}, 'suerte de juana');
 Al correr el código anterior, en el mapa veremos la imagen rescalada:
 
 <br>
-<img src="../fig/03_L8-rescalada.png" border = "10" width="80%" height="80%">
+<img src="../fig/03_L8-rescalada.png" border = "10" width="90%" height="90%">
 <br><br>
 
 Use la pestaña Inspector en la ventana de la derecha para indagar los valores de reflectancia en algunos sitios conocidos.
@@ -253,7 +253,7 @@ Map.addLayer(image_SR,o_ajuste,'RGB572 ajustada');
 
 El resultado es el siguiente:
 <br>
-<img src="../fig/03_RGB572.png" border = "10" width="80%" height="80%">
+<img src="../fig/03_RGB572.png" border = "10" width="90%" height="90%">
 <br><br>
 
 ### Recorte de imágenes
@@ -278,7 +278,7 @@ Map.addLayer(recorteL8col.sort('CLOUD_COVER').first(), p_ajuste, 'imagen colecci
 
 El resultado es el siguiente:
 <br>
-<img src="../fig/03_Recorte.png" border = "10" width="80%" height="80%">
+<img src="../fig/03_Recorte.png" border = "10" width="90%" height="90%">
 <br><br>
 
 
