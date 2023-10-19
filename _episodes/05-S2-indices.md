@@ -34,7 +34,7 @@ La misión Sentinel- 2 de la agencia espacial europea tiene un cubrimiento globa
 
 Las imágenes Sentinel-2 tienen bandas con mejor resolución espacial que Landsat:
 
-<img src="../fig/04_S2_resolucion.png" width="80%" height="80%" />
+<img src="../fig/04_S2_resolution.png" width="80%" height="80%" />
 <sub>*Sentinel 2 spatial resolution*</sub>
 
 Al igual que otras imágenes satelitales, existen diversos niveles de procesamiento de las imágenes Sentinel-2:
