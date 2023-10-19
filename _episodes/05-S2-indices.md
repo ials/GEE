@@ -17,7 +17,7 @@ keypoints:
 - Los valores de los indices se puedean agregar en cada objeto y obtener series temporlas
 - Las series temporales se pueden exportar para posterior procesamiento
 ---
----
+
 
 ## IALS - 18.10.2023
 

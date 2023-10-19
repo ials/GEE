@@ -24,7 +24,7 @@ keypoints:
 
 Las imágenes Landsat tienen bandas espectrales que se muestran en la siguiente gráfica:
 
-<img src="../fig/04_L8-bands.png" width="80%" height="80%" />
+<img src="../fig/04-L8-bands.png" width="80%" height="80%" />
 <sub>*USGS Landsat archive holdings as of January 1, 2015 (Wulder et al. (2016)).*</sub>
 
 Note que en los sensores OLI (Landsat 8) y OLI 2 (Landsat 9) la banda del infrarrojo cercano es la Banda 5 y que la banda del rojo es la Banda 4.

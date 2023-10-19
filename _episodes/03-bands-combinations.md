@@ -10,7 +10,7 @@ questions:
 objectives:
 - Acceder a una colección de imágenes
 - Filtrar la colección por fecha y por extensión espacial
-- Crear una función para recortar todas las imágenes de una *image collections*
+- Crear una función para recortar todas las imágenes de una *image collection*
 - Consultar metadatos de una imagen
 - Crear composiciones a color
 keypoints:
