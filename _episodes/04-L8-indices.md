@@ -14,7 +14,7 @@ objectives:
 - Obtener series de tiempo de los valores promedio de los indices en una coleccion de objetos
 keypoints:
 - Se puede crear bandas nuevas con los indices espectrales que se deseen
-- Los valores de los indices se puedean agregar en cada objeto y obtener series temporlas
+- Los valores de los indices se puedean agregar en cada objeto para obtener series temporales
 - Las series temporales se pueden exportar para posterior procesamiento
 ---
 
