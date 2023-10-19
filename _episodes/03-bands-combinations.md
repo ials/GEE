@@ -14,7 +14,8 @@ objectives:
 - Consultar metadatos de una imagen
 - Crear composiciones a color
 keypoints:
-- Se puede acceder a las imágenes de una *image collection* completa y crear filtros basados en el periodo de tiempo y la ubicación del área de estudio
+- Se puede acceder a las imágenes de una *image collection* completa y 
+_ Se puede filtrar una colección  segun el periodo de tiempo y la ubicación del área de estudio
 - Las imágenes pueden ser recortadas para cubrir la zona de interés
 - Una imagen se puede visualizar en diferentes combinaciones de bandas
 - La visualización de una imagen requiere ajuste de contraste y corrección gamma 

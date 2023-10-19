@@ -3,21 +3,19 @@ title: "Indices espectrales Landsat-8"
 teaching: 15
 exercises: 45
 questions:
-- ¿Cómo acceder a una colección de imágenes?
-- ¿Cómo filtrar por fechas y por cubrimiento?
-- ¿Cómo recortar todas las imágenes de una colección?
-- ¿Cómo visualizar composiciones a color?
+- ¿Cómo crear una funcion que calcule un indice de vegetacion?
+- ¿Cómo aplicar la funcion a todas las imágenes de una colección?
+- ¿Cómo obtener el valor promedio de un indice para una coleccion  de objetos?
 objectives:
-- Acceder a una colección de imágenes
-- Filtrar la colección por fecha y por extensión espacial
-- Crear una función para recortar todas las imágenes de una *image collections*
-- Consultar metadatos de una imagen
-- Crear composiciones a color
+- Acceder a una colección de imágenes y filtrar por fecha y por extensión espacial
+- Recortar las imagenes
+- Rescalar los niveles digitales de las imagenes recortadas
+- Obtener una coleccion de indices de vegetacion
+- Obtener series de tiempo de los valores promedio de los indices en una coleccion de objetos
 keypoints:
-- Se puede acceder a las imágenes de una *image collection* completa y crear filtros basados en el periodo de tiempo y la ubicación del área de estudio
-- Las imágenes pueden ser recortadas para cubrir la zona de interés
-- Una imagen se puede visualizar en diferentes combinaciones de bandas
-- La visualización de una imagen requiere ajuste de contraste y corrección gamma 
+- Se puede crear bandas nuevas con los indices espectrales que se deseen
+- Los valores de los indices se puedean agregar en cada objeto y obtener series temporlas
+- Las series temporales se pueden exportar para posterior procesamiento
 ---
 
 ## IALS - 18.10.2023
@@ -262,4 +260,4 @@ Desde la ventana emergente pueden exportar las series de tiempo en formato CSV p
 <br><br>
 
 
-Se puede acceder a una versión estática del script aquí: [https://code.earthengine.google.com/f69dc39a3fbeb030c4973869f6ede8d3?noload=true](https://code.earthengine.google.com/f69dc39a3fbeb030c4973869f6ede8d3?noload=true)
+Se puede acceder a una versión estática del script aquí: [https://code.earthengine.google.com/f69dc39a3fbeb030c4973869f6ede8d3](https://code.earthengine.google.com/f69dc39a3fbeb030c4973869f6ede8d3)
