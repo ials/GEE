@@ -33,7 +33,7 @@ Una de las diferencias es que el sensor multiespectral de Sentinel-2 adquiere tr
 Una composición RGB SWIR-1 (B11), infrarrojo cercano (B8), y azul (B2) de Sentinel 2 se muestra en la siguiente figura:
 
 <br>
-<img src="../fig/04_RGB-8-11-2.png" border = "10" width="60%" height="60%">
+<img src="../fig/04_RGB-8-11-2.png" border = "10" width="80%" height="80%">
 <br><br>
 
 Esta composición se puede usar para monitorear la salud de los cultivos. La vegetación vigorosa se muestra en color verde oscuro.
@@ -65,7 +65,7 @@ Note que en este caso, la colección anual comprende un número mayor de imágen
 Otro resultado es la serie de tiempo de NDVI para cada una de las suertes de interés:
 
 <br>
-<img src="../fig/04_S2_NDVI_chart.png" border = "10" width="90%" height="90%">
+<img src="../fig/04_S2_NDVI_chart.png" border = "10" width="100%" height="100%">
 <br><br>
 
 

@@ -49,7 +49,7 @@ Una imagen Landsat permite obtener una gran variedad de indices espectrales, por
 
 Para información sobre cada índice consulte [este enlace](https://www.usgs.gov/landsat-missions/landsat-surface-reflectance-derived-spectral-indices).
 
-<img src="../fig/04_L9-Spectral-Indices.png" width="80%" height="80%" />
+<img src="../fig/04-L9-Spectral-Indices.png" width="80%" height="80%" />
 <sub>*USGS Landsat spectral indices*</sub>
 https://www.usgs.gov/landsat-missions/landsat-surface-reflectance-derived-spectral-indices
 
@@ -88,7 +88,7 @@ print(l8Col);
 {% endhighlight %}
 
 <br>
-<img src="../fig/04_L8_1.png" border = "10" width="50%" height="50%">
+<img src="../fig/04_L8_1.png" border = "10" width="80%" height="80%">
 <br><br>
 
 
@@ -116,7 +116,7 @@ print(aoi_L8col, 'aoi_L8col');
 
 
 <br>
-<img src="../fig/04_L8_2.png" border = "10" width="50%" height="50%">
+<img src="../fig/04_L8_2.png" border = "10" width="80%" height="80%">
 <br><br>
 
 ### Rescalamiento
@@ -157,7 +157,7 @@ Map.addLayer(suerte, param, 'suerte');
 {% endhighlight %}
 
 <br>
-<img src="../fig/04_L8_3.png" border = "10" width="50%" height="50%">
+<img src="../fig/04_L8_3.png" border = "10" width="80%" height="80%">
 <br><br>
 
 ### Cálculo del indice de vegetacion NDVI
@@ -222,7 +222,7 @@ print(NDVIcol, 'NDVIcol');
 {% endhighlight %}
 
 <br>
-<img src="../fig/04_L8_4.png" border = "10" width="50%" height="50%">
+<img src="../fig/04_L8_4.png" border = "10" width="80%" height="80%">
 <br><br>
 
 
@@ -256,7 +256,7 @@ Las series de tiempo se pueden visualizar con mas detalle si se hace clic en el 
 Desde la ventana emergente pueden exportar las series de tiempo en formato CSV para realizar post-proceso en otro programa.
 
 <br>
-<img src="../fig/04_L8_ndvi_chart.png" border = "10" width="50%" height="50%">
+<img src="../fig/04_L8_ndvi_chart.png" border = "10" width="100%" height="100%">
 <br><br>
 
 
