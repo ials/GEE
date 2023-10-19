@@ -21,7 +21,27 @@ keypoints:
 
 ## IALS - 18.10.2023
 
-# Descripción general: Bandas espectrales de las imágenes  Sentinel-2
+# Descripción general: Imágenes  Sentinel-2
+
+La misión Sentinel- 2 de la agencia espacial europea tiene un cubrimiento global y un tiempo de revisita bastante frecuente.
+
+<img src="../fig/04_S2_cov.png" width="80%" height="80%" />
+<sub>*Sentinel 2 coverage*</sub>
+
+
+<img src="../fig/04_S2_rev.png" width="80%" height="80%" />
+<sub>*Sentinel 2 revisit time*</sub>
+
+Las imágenes Sentinel-2 tienen bandas con mejor resolución espacial que Landsat:
+
+<img src="../fig/04_S2_resolucion.png" width="80%" height="80%" />
+<sub>*Sentinel 2 spatial resolution*</sub>
+
+Al igual que otras imágenes satelitales, existen diversos niveles de procesamiento de las imágenes Sentinel-2:
+
+<img src="../fig/04_S2_products.png" width="80%" height="80%" />
+<sub>*Sentinel 2 processing levels*</sub>
+
 
 Las imágenes Sentinel-2 tienen algunas bandas espectrales similares a Landsat tal como se muestra en la siguiente gráfica:
 

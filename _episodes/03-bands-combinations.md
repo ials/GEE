@@ -58,7 +58,10 @@ Hay tres maneras de obtener datos de vectores en GEE:
   * Utilizar un conjunto de datos de vectores existente en GEE. [Navegue por el catálogo de datos vectoriales aquí](https://developers.google.com/earth-engine/vector_datasets).
   * Dibujar manualmente puntos, líneas y polígonos usando las herramientas de geometría del Code Editor y teniendo como referencia alguna imagen.
 
-Aquí, usaremos un conjunto de datos previamente "subido" a GEE como "activo" (asset), el cual representa las "suertes" de la Hacienda La Juana.
+Aquí, usaremos dos tablas previamente "subidas" a GEE como "activo" (asset), las cuales representan:
+
+- [una hacienda](https://code.earthengine.google.com/?asset=users/ivanlizarazo/RIO/Hda_La_Juana); y 
+- las [suertes](https://code.earthengine.google.com/?asset=users/ivanlizarazo/RIO/ste_La_Juana) de dicha hacienda.
 
 {% highlight javascript %}
 // cargar un polígono de suertes previamente importado a GEE
