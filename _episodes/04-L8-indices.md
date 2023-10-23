@@ -20,7 +20,7 @@ keypoints:
 
 ## IALS - 18.10.2023
 
-# Descripción general: Bandas espectrales de las imágenes  Landsat
+## Descripción general: Bandas espectrales de las imágenes  Landsat
 
 Las imágenes Landsat tienen bandas espectrales que se muestran en la siguiente gráfica:
 
@@ -29,7 +29,7 @@ Las imágenes Landsat tienen bandas espectrales que se muestran en la siguiente 
 
 Note que en los sensores OLI (Landsat 8) y OLI 2 (Landsat 9) la banda del infrarrojo cercano es la Banda 5 y que la banda del rojo es la Banda 4.
 
-# Indices espectrales a partir de imagenes Landsat
+## Indices espectrales a partir de imagenes Landsat
 
 Una imagen Landsat permite obtener una gran variedad de indices espectrales, por ejmplo:
 
@@ -54,7 +54,7 @@ Para información sobre cada índice consulte [este enlace](https://www.usgs.gov
 https://www.usgs.gov/landsat-missions/landsat-surface-reflectance-derived-spectral-indices
 
 
-# Ejercicio: Obtención de series de tiempo del indice de vegetacion
+## Ejercicio: Obtención de series de tiempo del indice de vegetacion
 
 Aquí, usaremos GEE para calcular el NDVI de todas las imágenes Landsat-8 de 2022 que cubran una zona de interés.
 
