@@ -49,7 +49,7 @@ Una imagen Landsat permite obtener una gran variedad de indices espectrales, por
 
 Para información sobre cada índice consulte [este enlace](https://www.usgs.gov/landsat-missions/landsat-surface-reflectance-derived-spectral-indices).
 
-<img src="../fig/04-L9-Spectral-Indices.gif" width="80%" height="80%" />
+<img src="../fig/04-L9-Spectral-Indices.gif" width="70%" height="70%" />
 <sub>*USGS Landsat spectral indices*</sub>
 https://www.usgs.gov/landsat-missions/landsat-surface-reflectance-derived-spectral-indices
 
@@ -255,7 +255,7 @@ Las series de tiempo se pueden visualizar con mas detalle si se hace clic en el 
 Desde la ventana emergente pueden exportar las series de tiempo en formato CSV para realizar post-proceso en otro programa.
 
 <br>
-<img src="../fig/04_L8_ndvi_suertes.png" border = "10" width="120%" height="120%">
+<img src="../fig/04_NDVI_suertes.png" border = "10" width="140%" height="140%">
 <br><br>
 
 
@@ -287,7 +287,7 @@ print(NDVIChart);
 
 
 <br>
-<img src="../fig/04_L8_ndvi_suerte50.png" border = "10" width="120%" height="120%">
+<img src="../fig/04_NDVI_suerte50.png" border = "10" width="140%" height="140%">
 <br><br>
 
 Se puede acceder a una versión estática del script aquí: [https://code.earthengine.google.com/f69dc39a3fbeb030c4973869f6ede8d3](https://code.earthengine.google.com/f69dc39a3fbeb030c4973869f6ede8d3)
