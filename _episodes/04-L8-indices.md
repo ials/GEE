@@ -49,7 +49,7 @@ Una imagen Landsat permite obtener una gran variedad de indices espectrales, por
 
 Para información sobre cada índice consulte [este enlace](https://www.usgs.gov/landsat-missions/landsat-surface-reflectance-derived-spectral-indices).
 
-<img src="../fig/04-L9-Spectral-Indices.gif" width="70%" height="70%" />
+<img src="../fig/04-L9-Spectral-Indices.gif" width="50%" height="50%" />
 <sub>*USGS Landsat spectral indices*</sub>
 https://www.usgs.gov/landsat-missions/landsat-surface-reflectance-derived-spectral-indices
 
