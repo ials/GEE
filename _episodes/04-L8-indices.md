@@ -68,20 +68,19 @@ El siguiente codigo permite filtar la colección usando el año de interés y lo
 
 // cargar una tabla con la zona de estudio
 // suerte es un objeto importado usando el shapefile de suertes de La Juana
-var suerte = tabla;
+var suerte = ee.FeatureCollection("users/ivanlizarazo/RIO/ste_La_Juana");
 // 
 
-
-// establecer la vista del mapa y el zoom, y añadir el depto de interés
+// establecer la vista del mapa y el zoom, y añadir la zona de interés
 //Map.setCenter(-76.6725, 3.7065, 10);
-Map.centerObject(suerte,12);
+Map.centerObject(suerte,16);
 Map.addLayer(suerte, {}, 'Suertes de Juana', false);
-Map.addLayer(AOI, {}, 'AOI', false);
+//Map.addLayer(AOI, {}, 'AOI', false);
 
 
 // cargue todas las imágenes Landsat 8 SR dentro de los límites del polígono para el año 2022
 var l8Col = ee.ImageCollection('LANDSAT/LC08/C02/T1_L2')
-          .filterBounds(AOI)
+          .filterBounds(suerte)
           .filterDate('2022-01-01', '2022-12-31');
 
 print(l8Col);
@@ -104,7 +103,7 @@ Ahora, vamos a recortar las imágenes:
 
 // funcion para recortar una imagen
 function recortar(img) {
-  return img.clip(AOI);
+  return img.clip(suerte);
 }
 
 // iteracion sobre toda la coleccion
@@ -142,10 +141,10 @@ var aoi_L8_sr = aoi_L8col.map(rescalar);
 print(aoi_L8_sr, 'aoi_L8_sr');
 
 // visualizar el resultado
-var param= {bands: ["SR_B4","SR_B3","SR_B2"],
+var param= {bands: ["SR_B5","SR_B6","SR_B3"],
              gamma: 1.5,
-             max: 0.28,
-             min: 0.00,
+             max: 0.25,
+             min: 0.10,
              opacity: 1};
 
 // seleccionar la imagen con menos nubes             
@@ -226,11 +225,11 @@ print(NDVIcol, 'NDVIcol');
 <br><br>
 
 
-### Obtencion de series temporales de  NDVI
+### Obtencion de series temporales de  NDVI para todas las suertes
 
 {% highlight javascript %}
 //
-// Obtener los valores promedio de NDVI 2022 para todos los lotes
+// Obtener los valores promedio de NDVI 2022 para todas las suertes
 
  // Plot NDVI ---------------------------------------------------------------------------------------------
 var NDVIChart = ui.Chart.image.seriesByRegion({
@@ -238,11 +237,11 @@ var NDVIChart = ui.Chart.image.seriesByRegion({
   regions: suerte,
   reducer: ee.Reducer.mean(), //type of reduction. See ee.Reducers for other kinds of reductions
   scale: 30, //spatial scale of Landsat bands
-  seriesProperty: 'ID',  //property of suertes to display in map
+  seriesProperty: 'suerte',  //property of suertes to display in map
   xProperty: 'system:time_start'
 })
   .setOptions({
-    title: 'Landsat 8 NDVI',
+    title: 'Landsat 8 NDVI para las suertes de Juana',
     vAxis: {title: 'NDVI', maxValue: 1, minValue: 0},
     hAxis: {title: 'date', format: 'MM-yy', gridlines: {count: 12}},
   });
@@ -256,8 +255,39 @@ Las series de tiempo se pueden visualizar con mas detalle si se hace clic en el 
 Desde la ventana emergente pueden exportar las series de tiempo en formato CSV para realizar post-proceso en otro programa.
 
 <br>
-<img src="../fig/04_L8_ndvi_chart.png" border = "10" width="120%" height="120%">
+<img src="../fig/04_L8_ndvi_suertes.png" border = "10" width="120%" height="120%">
 <br><br>
 
+
+### Obtencion de series temporales de  NDVI para una suerte
+
+{% highlight javascript %}
+//
+var suerte50 = suerte.filter(ee.Filter.eq('suerte', '050'));
+
+// Obtener los valores promedio de NDVI 2022 para la suerte de interes
+
+ // Plot NDVI ---------------------------------------------------------------------------------------------
+var NDVIChart = ui.Chart.image.seriesByRegion({
+  imageCollection: NDVIcol,
+  regions: suerte50,
+  reducer: ee.Reducer.mean(), //type of reduction. See ee.Reducers for other kinds of reductions
+  scale: 30, //spatial scale of Landsat bands
+  seriesProperty: 'ID',  //property of suertes to display in map
+  xProperty: 'system:time_start'
+})
+  .setOptions({
+    title: 'Landsat 8 NDVI en la suerte 50',
+    vAxis: {title: 'NDVI', maxValue: 1, minValue: 0},
+    hAxis: {title: 'date', format: 'MM-yy', gridlines: {count: 12}},
+  });
+
+print(NDVIChart);
+{% endhighlight %}
+
+
+<br>
+<img src="../fig/04_L8_ndvi_suerte50.png" border = "10" width="120%" height="120%">
+<br><br>
 
 Se puede acceder a una versión estática del script aquí: [https://code.earthengine.google.com/f69dc39a3fbeb030c4973869f6ede8d3](https://code.earthengine.google.com/f69dc39a3fbeb030c4973869f6ede8d3)
