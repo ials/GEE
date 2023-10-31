@@ -23,7 +23,7 @@ keypoints:
 TerraClimate es un conjunto de datos mensuales sobre el clima y el balance hídrico de las superficies terrestres del planeta. Utiliza técnicas de interpolación apoyadas por modelos climáticos, combinando normales climatológicas de 1km de resolución espacial de WorldClim, con datos de resolución espacial más gruesa pero variables en el tiempo, de CRU Ts4.0 y del Reanálisis Japonés de 55 años (JRA55). Conceptualmente, el procedimiento aplica anomalías interpoladas variables en el tiempo de CRU Ts4.0/JRA55 a la climatología de alta resolución espacial de WorldClim para crear un conjunto de datos de 5km de resolución espacial.
 
 <br>
-<img src="../fig/05-terraclimate.png" border = "10" width="80%" height="80%">
+<img src="../fig/05_terraclimate.png" border = "10" width="80%" height="80%">
 <br><br>
 
 
@@ -170,7 +170,7 @@ print(chart);
 
 Al imprimir la colección de datos de TerraClimate para la zona de interés se obtiene el siguiente resultado:
 <br>
-<img src="../fig/05_print_Tc.png" border = "10" width="120%" height="120%">
+<img src="../fig/05_print_TC.png" border = "10" width="120%" height="120%">
 <br><br>
 
 
