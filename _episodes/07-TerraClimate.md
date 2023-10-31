@@ -187,5 +187,41 @@ El resultado final es un gráfico de los valores mensuales en 2022 de las variab
 <img src="../fig/05_clima_suerte30.png" border = "10" width="120%" height="120%">
 <br><br>
 
+## Limitaciones de los datos disponibles en TerraClimate
+
+Cómo se indicó al principio de este curso, una de las características importantes de los datos es su resolución espacial.  En el caso de Terraclimate, ella es de aprox. 5km.  Esta resolución plantea muchas limitaciones respecto a su utilidad.  Visualicemos una variable climática para ilustrar este aspecto.
+
+{% highlight javascript %}
+// Paso 6.  Visualizar una variable en una fecha de interes
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// Definir parametros de visualizacion.
+var prVis = {
+  min: 0.0,
+  max: 100.0,
+  palette: ['red', 'orange', 'yellow','cyan', 'green', 'blue']  
+};
+// Seleccionar la variable de interes
+var pr =  tc.select('pr'); // "pr" es precipitacion acumulada
+
+// Definir la zona de interes
+AOI =  ee.Geometry.Polygon(
+        [[[-76.04, 4.62],
+          [-76.04, 4.55],
+          [-76.00, 4.55],
+          [-76.00, 4.62]]], null, false);
+// Recortar a la zona 
+function recortar(img) {
+  return img.clip(AOI);
+}
+var pr_aoi = pr.map(recortar);
+// Seleccionar la fecha de interes
+var sr_ene = pr_aoi.filter(ee.Filter.date('2022-01-01', '2022-01-02'));
+Map.centerObject(suerte30, 13);
+Map.addLayer(sr_ene, prVis, 'Precipitacion en Enero 2022');
+{% endhighlight %}
 
 
+<br>
+<img src="../fig/07-precipitation.png" border = "10" width="120%" height="120%">
+<br><br>
