@@ -8,8 +8,7 @@ questions:
 - ¿Cómo obtener el valor promedio de un indice para una coleccion  de objetos?
 objectives:
 - Acceder a una colección de imágenes y filtrar por fecha y por extensión espacial
-- Recortar las imagenes
-- Rescalar los niveles digitales de las imagenes recortadas
+- Recortar las imagenes y rescalar los niveles digitales de las imagenes recortadas
 - Obtener una coleccion de indices de vegetacion
 - Obtener series de tiempo de los valores promedio de los indices en una coleccion de objetos
 keypoints:
@@ -71,7 +70,7 @@ https://www.usgs.gov/landsat-missions/landsat-surface-reflectance-derived-spectr
 
 # Ejercicio: Obtención de series de tiempo de un indice de vegetacion
 
-En este ejercicio vamos calcular el NDVI de todas las imágenes Sentinel-2 de 2022 que cubren la hacienda de interés.
+En este ejercicio vamos calcular el NDVI de todas las imágenes Sentinel-2 de 2022 que cubren la zona de interés.
 
 El proceso es similar al utilizado para las imagenes Landsat-8. Aunque la banda Red de Sentinel-2 es la Banda 4, la banda NIR es la Banda 8. Eso determina que la formula para el cálculo del indice NDVI es diferente.
 

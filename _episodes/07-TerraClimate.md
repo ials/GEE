@@ -34,7 +34,7 @@ Los datos mensuales de Terraclimate incluyen diferentes variables:
 
 
 
-## Ejercicio: obtención de dos variables climátics
+## Ejercicio: obtención de dos variables climáticas
 
 En este ejercicio vamos a obtener datos mensuales de las variables "deficit de agua" (def) y "humedad del suelo" (soil) que cubren la hacienda de interés correspondientes al año 2022.
 
@@ -49,7 +49,7 @@ El código es similar al que hemos venido practicado en ejercicios previos. Ense
 //
 //
 Objetivo: obtener algunas variables climáticaa para una zona de interés
-Módulo Tutorial Completo: https://ials.github.io/GEE_BASICO/05-TerraClimate/
+Módulo Tutorial Completo: https://ials.github.io/GEE_BASICO/07-TerraClimate/
 
 Temas tratados: 
   - acceso a la coleccion de datos de TerraClimate
@@ -181,7 +181,7 @@ Al imprimir la colección de datos de TerraClimate para la zona de interés se p
 <br><br>
 
 
-El resultado final es un gráfico de los valores mensuales en 2022 de las variables "water deficit" y "soil moisture" para la suerte de interés:
+El resultado final es un gráfico de los valores mensuales en 2022 de las variables "water deficit" [mm] y "soil moisture" [mm] para la suerte de interés:
 
 <br>
 <img src="../fig/05_clima_suerte30.png" border = "10" width="120%" height="120%">
