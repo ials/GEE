@@ -11,20 +11,27 @@ objectives:
 - Reescalar las bandas de interés
 - Obtener series de tiempo de las variables de interés
 keypoints:
-- Es posible acceder a datos mensuales  de interés agronómico
+- Es posible acceder a datos mensuales  de variables de interés agronómico
 
 ---
-
 
 ## IALS - 31.10.2023
 
 ## Terraclimate
 
-TerraClimate es un conjunto de datos mensuales sobre el clima y el balance hídrico de las superficies terrestres del planeta. Utiliza técnicas de interpolación apoyadas por modelos climáticos, combinando normales climatológicas de 1km de resolución espacial de WorldClim, con datos de resolución espacial más gruesa pero variables en el tiempo, de CRU Ts4.0 y del Reanálisis Japonés de 55 años (JRA55). Conceptualmente, el procedimiento aplica anomalías interpoladas variables en el tiempo de CRU Ts4.0/JRA55 a la climatología de alta resolución espacial de WorldClim para crear un conjunto de datos de 5km de resolución espacial.
+TerraClimate es un conjunto de datos mensuales sobre el clima y el balance hídrico de las superficies terrestres del planeta. Utiliza técnicas de interpolación apoyadas por modelos climáticos, combinando normales climatológicas de 1km de resolución espacial de WorldClim, con datos de resolución espacial más gruesa pero variables en el tiempo, de CRU Ts4.0 y del Reanálisis Japonés de 55 años (JRA55). Conceptualmente, el procedimiento aplica anomalías interpoladas variables en el tiempo de CRU Ts4.0/JRA55 a la climatología de alta resolución espacial de WorldClim para crear un conjunto de datos de *5 km* de resolución espacial.
 
 <br>
 <img src="../fig/05_terraclimate.png" border = "10" width="80%" height="80%">
 <br><br>
+
+Los datos mensuales de Terraclimate incluyen diferentes variables:
+
+<br>
+<img src="../fig/07-tc_variables.png" border = "10" width="80%" height="80%">
+<br><br>
+
+
 
 
 ## Ejercicio: obtención de dos variables climátics
@@ -168,13 +175,13 @@ print(chart);
 {% endhighlight %}
 
 
-Al imprimir la colección de datos de TerraClimate para la zona de interés se obtiene el siguiente resultado:
+Al imprimir la colección de datos de TerraClimate para la zona de interés se puede observar que se trata de datos mensuales correspondientes a las dos bandas seleccionadas:
 <br>
-<img src="../fig/05_print_TC.png" border = "10" width="120%" height="120%">
+<img src="../fig/05_print_TC.png" border = "10" width="90%" height="90%">
 <br><br>
 
 
-El resultado es un gráfico de los valores mensuales en 2022 de las variables "water deficit" y "soil moisture" para la suerte de interés:
+El resultado final es un gráfico de los valores mensuales en 2022 de las variables "water deficit" y "soil moisture" para la suerte de interés:
 
 <br>
 <img src="../fig/05_clima_suerte30.png" border = "10" width="120%" height="120%">

@@ -29,7 +29,7 @@ La percepción remota puede contribuir a un monitoreo efectivo de las diferentes
 Una manera de hacerlo es mediante el uso de indices de vegetación. 
 
 <br>
-<img src="../fig/05-vegetation_indices.png" border = "10" width="80%" height="80%">
+<img src="../fig/05-vegetation_indices.png" border = "10" width="60%" height="60%">
 <br><br>
 
 
@@ -38,11 +38,11 @@ Sin embargo, la pregunta es ¿cuál es el indice de vegetación más apropiado p
 Al respecto, se puede decir que, en principio, todos los indices son útiles. Sin embargo, solamente el uso combinado de diferentes indices y su contrastación con datos de campo permite realizar afirmaciones veraces sobre la utilidad real de uno u otro indice.
 
 <br>
-<img src="../fig/05-VI-literature.png" border = "10" width="80%" height="80%">
+<img src="../fig/05-VI-literature.png" border = "10" width="100%" height="100%">
 <br><br>
 
 
-## Ejericio: obtención de tres indices de vegetacion
+## Ejercicio: obtención de tres indices de vegetacion
 
 En este ejercicio vamos calcular NDVI, GNDVI y EVI2 de todas las imágenes Sentinel-2 de 2022 que cubren la hacienda de interés.
 
@@ -306,7 +306,7 @@ print(chart);
 
 La siguiente figura muestra tres indices de vegetacion Sentinel-2 en una fecha determinada:
 <br>
-<img src="../fig/05_tres.png" border = "10" width="90%" height="90%">
+<img src="../fig/05_tres.png" border = "10" width="70%" height="70%">
 <br><br>
 
 
