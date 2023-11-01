@@ -223,5 +223,5 @@ Map.addLayer(sr_ene, prVis, 'Precipitacion en Enero 2022');
 
 
 <br>
-<img src="../fig/07-precipitation.png" border = "10" width="120%" height="120%">
+<img src="../fig/07-precipitation.png" border = "10" width="100%" height="100%">
 <br><br>
