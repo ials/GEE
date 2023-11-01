@@ -37,7 +37,7 @@ ii.	NDVI y EVI obtenidos de imágenes MODIS, están relacionados con la energía
 iii. Factores biofísicos determinan la relación entre la eficiencia real y potencial de conversión de la energía solar por las plantas.
 
 <br>
-<img src="../fig/07_MODIS17meta.png" border = "10" width="80%" height="80%">
+<img src="../fig/07_MOD17meta.png" border = "10" width="80%" height="80%">
 <br><br>
 
 Expresado de forma muy sencilla, la fracción de radiación fotosintéticamente activa absorbida (FAPAR) puede vincularse a través de la eficiencia de las plantas para convertir la radiación solar en  crecimiento y así estimar la producción primaria. Esta eficiencia de conversión depende del tipo de bioma, del índice de área foliar y de las condiciones de evapotranspiración y respiración. 
@@ -142,7 +142,7 @@ Map.addLayer(tabla,{}, 'juana');
 {% endhighlight %}
 
 <br>
-<img src="../fig/07_GPP_enero.png" border = "10" width="90%" height="90%">
+<img src="../fig/07_GPP_enero.png" border = "10" width="75%" height="75%">
 <br><br>
 
 {% highlight javascript %}
@@ -175,10 +175,10 @@ print(GPPChart);
 El resultado final es una serie temporal 2022 de la variable GPP para la suerte de interés:
 
 <br>
-<img src="../fig/07_GPP_suerte50.png" border = "10" width="120%" height="120%">
+<img src="../fig/07_GPP_suerte50.png" border = "10" width="140%" height="140%">
 <br><br>
 
-## Limitaciones de los datos disponibles en TerraClimate
+## Limitaciones de los datos MODIS
 
-Cómo se indicó al principio de este curso, una de las características importantes de los datos es su resolución espacial.  En el caso de los productos MOD17, ella es de 500m.  Esta resolución tiene muchas limitaciones para monitorear cultivos que tengan poca extensión.  A pesar de ello pueden tener diversas aplicaciones en agricultura.
+Cómo se indicó al principio de este curso, una de las características importantes de los datos es su resolución espacial.  En el caso de los productos MOD17, ella es de 500m.  Esta resolución tiene muchas limitaciones para monitorear cultivos que tengan poca extensión.  A pesar de ello, son productos obtenidos mediante un procedimiento rigurosos y se ha reportado su utilización en diversas aplicaciones en agricultura.
 
