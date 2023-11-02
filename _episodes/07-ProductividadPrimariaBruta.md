@@ -180,5 +180,5 @@ El resultado final es una serie temporal 2022 de la variable GPP para la suerte 
 
 ## Limitaciones de los datos MODIS
 
-Cómo se indicó al principio de este curso, una de las características importantes de los datos es su resolución espacial.  En el caso de los productos MOD17, ella es de 500m.  Esta resolución tiene muchas limitaciones para monitorear cultivos que tengan poca extensión.  A pesar de ello, son productos obtenidos mediante un procedimiento rigurosos y se ha reportado su utilización en diversas aplicaciones en agricultura.
+Cómo se indicó al principio de este curso, una de las características importantes de los datos es su resolución espacial.  En el caso de los productos MOD17, el tamaño del pixel es de 500 m.  Esta resolución tiene muchas limitaciones para monitorear cultivos que tengan poca extensión.  A pesar de ello, son productos obtenidos mediante un procedimiento rigurosos y en la literatura se ha reportado su utilización en diversas aplicaciones en agricultura.
 
