@@ -26,7 +26,7 @@ Una de las técnicas utilizadas para "reconstruir" series temporales es el denom
 La figura siguiente muestra el principio del filtrado temporal:
 
 <br>
-<img src="../fig/09-TemporalFilter.png" border = "10" width="90%" height="90%">
+<img src="../fig/09-TemporalFilter.png" border = "10" width="100%" height="100%">
 <br><br>
 
 
@@ -269,7 +269,7 @@ print(chart_NDVI);
 
 Al plotear la serie con los dos indices de la serie  se obtiene la siguiente figura:
 <br>
-<img src="../fig/09-Paso5.png" border = "10" width="95%" height="95%">
+<img src="../fig/09-Paso5.png" border = "10" width="110%" height="110%">
 <br><br>
 
 Si es el caso, descargue la serie en formato CSV.
