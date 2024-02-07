@@ -1,4 +1,4 @@
-GOOGLE EARTH ENGINE FOR ECOLOGY AND CONSERVATION 
+GOOGLE EARTH ENGINE FOR MONITORING SDG INDICATORS 
 ===================================================
 
 [![Build Status](https://travis-ci.org/buonzz/laravel-4-freegeoip.svg?branch=master)](https://travis-ci.org/buonzz/laravel-4-freegeoip)
@@ -17,9 +17,9 @@ This course aims to train students, researchers and practitioners in the applica
 * Basic coding knowledge (e.g. R, Python, JavaScript)
 
 ## ITINERARY
-Course Dates: April 19th – April 30th, 2021. 
-Sessions: 2-hour daily sessions (Monday – Friday)
-Session times: 6pm – 8pm (Standard South African Time)
+Course Dates: March 18th – March 28th, 2024. 
+Sessions: 5-hour daily sessions (Monday – Friday)
+Session times: 8am – 1pm (Central European Time)
 
 Each session will consist of a theoretical introduction, demonstration of code, and self-learning practicals. Recordings of the live sessions will be made available to course participants. 
 
@@ -38,6 +38,7 @@ Free for non-commercial use
 
 CREDITS
 =======
+Adapted from material done by:
 * Sandra MacFadyen
 * Joseph White
 * Geethen Singh
