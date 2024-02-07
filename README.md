@@ -38,7 +38,7 @@ Free for non-commercial use
 
 CREDITS
 =======
-Adapted from material done by:
+Adapted from material elaborated by:
 * Sandra MacFadyen
 * Joseph White
 * Geethen Singh
